@@ -14,16 +14,16 @@ import UIKit
     @IBOutlet weak var dayView: UIView!
     @IBOutlet weak var labelDayMin: UILabel!
     @IBOutlet weak var labelNightDose: UILabel!
-    @IBOutlet weak var labelNightResult: UILabel!
-    @IBOutlet weak var labelNightResultSecond: UILabel!
+    @IBOutlet weak var labelNightResult: TOMSMorphingLabel!
+    @IBOutlet weak var labelNightResultSecond: TOMSMorphingLabel!
     @IBOutlet weak var labelNightDoseAlert: UILabel!
     
     // Outlets for night view
     @IBOutlet weak var nightView: UIView!
     @IBOutlet weak var labelNightMin: UILabel!
     @IBOutlet weak var labelDayDose: UILabel!
-    @IBOutlet weak var labelDayResult: UILabel!
-    @IBOutlet weak var labelDayResultSecond: UILabel!
+    @IBOutlet weak var labelDayResult: TOMSMorphingLabel!
+    @IBOutlet weak var labelDayResultSecond: TOMSMorphingLabel!
     @IBOutlet weak var labelDayDoseAlert: UILabel!
     
     

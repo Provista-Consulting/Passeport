@@ -6,6 +6,7 @@
 #import "ShowHideButton.h"
 #import "RButton.h"
 #import "MyPickerView.h"
+#import "TOMSMorphingLabel.h"
 
 #define SLIDES_NUMBER 10
 
