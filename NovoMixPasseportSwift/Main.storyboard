@@ -207,14 +207,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mRq-y7-ls3"/>
+                    <navigationItem key="navigationItem" id="mRq-y7-ls3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="PC7-Tj-Vwg"/>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7c-bi-usC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2455" y="669"/>
+            <point key="canvasLocation" x="2736" y="669"/>
         </scene>
         <!--Calculator View Controller-->
         <scene sceneID="sZd-c0-jHd">
@@ -286,7 +288,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KDp-Az-B4B"/>
+                    <navigationItem key="navigationItem" id="KDp-Az-B4B">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="deZ-sV-Um7"/>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -303,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whc-Z2-rqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3595" y="669"/>
+            <point key="canvasLocation" x="2736" y="1609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4K2-5f-O7m">
@@ -323,7 +327,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfx-fE-ePS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421" y="669"/>
+            <point key="canvasLocation" x="1605" y="669"/>
         </scene>
     </scenes>
     <resources>

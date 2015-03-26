@@ -103,14 +103,15 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         
         self.resultView.alpha = 0.0
-        
         self.doseView.alpha = 0.0
         self.glycemiesView.alpha = 0.0
         
+        defaultValue()
         
     }
     
@@ -549,6 +550,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             
             self.resultView.labelDayMin.text = "- g/l"
             self.resultView.labelNightDose.text = "- Unités"
+            self.resultView.labelNightResult.text = ""
+            self.resultView.labelNightResultSecond.text = ""
             
             // Hide animation
             //[self hideAnimation];
@@ -658,6 +661,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             
             self.resultView.labelNightMin.text = "- g/l"
             self.resultView.labelDayDose.text = "- Unités"
+            self.resultView.labelDayResult.text = ""
+            self.resultView.labelDayResultSecond.text = ""
             
             // Hide animation
             //[self hideAnimation];
