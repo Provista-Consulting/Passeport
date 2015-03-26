@@ -309,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="2736" y="1609"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Navigation Controller-->
         <scene sceneID="4K2-5f-O7m">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yOY-zZ-DZd" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yOY-zZ-DZd" customClass="MyNavigationController" customModule="NovoMixPasseportSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

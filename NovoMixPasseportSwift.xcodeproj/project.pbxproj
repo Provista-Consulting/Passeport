@@ -37,6 +37,7 @@
 		CA0F05D01AC2D86100BA3ABE /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05B41AC2D86100BA3ABE /* UnwindSegue.swift */; };
 		CA0F05D61AC4490A00BA3ABE /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D31AC4490A00BA3ABE /* NSString+Morphing.m */; };
 		CA0F05D71AC4490A00BA3ABE /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D51AC4490A00BA3ABE /* TOMSMorphingLabel.m */; };
+		CA0F05D91AC459CE00BA3ABE /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */; };
 		CAED02EE1ABED46F00022FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED02ED1ABED46F00022FE9 /* AppDelegate.swift */; };
 		CAED02F81ABED46F00022FE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAED02F61ABED46F00022FE9 /* LaunchScreen.xib */; };
 		CAED03041ABED46F00022FE9 /* NovoMixPasseportSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED03031ABED46F00022FE9 /* NovoMixPasseportSwiftTests.swift */; };
@@ -115,6 +116,7 @@
 		CA0F05D31AC4490A00BA3ABE /* NSString+Morphing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Morphing.m"; sourceTree = "<group>"; };
 		CA0F05D41AC4490A00BA3ABE /* TOMSMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMSMorphingLabel.h; sourceTree = "<group>"; };
 		CA0F05D51AC4490A00BA3ABE /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabel.m; sourceTree = "<group>"; };
+		CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		CAED02E81ABED46F00022FE9 /* NovoMixPasseportSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovoMixPasseportSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAED02EC1ABED46F00022FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAED02ED1ABED46F00022FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				CAED031D1ABED4A700022FE9 /* InfoButton.h */,
 				CAED031E1ABED4A700022FE9 /* InfoButton.m */,
 				CAED031F1ABED4A700022FE9 /* MyButton.swift */,
+				CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				CA0F05C91AC2D86100BA3ABE /* SpringImageView.swift in Sources */,
 				CAED03241ABED4A700022FE9 /* MultilineLabel.m in Sources */,
 				CA0F05B51AC2D86100BA3ABE /* AsyncButton.swift in Sources */,
+				CA0F05D91AC459CE00BA3ABE /* MyNavigationController.swift in Sources */,
 				CAED034D1ABED57800022FE9 /* DoseView.swift in Sources */,
 				CA0F05C51AC2D86100BA3ABE /* SoundPlayer.swift in Sources */,
 				CA0F05CB1AC2D86100BA3ABE /* SpringTextField.swift in Sources */,
