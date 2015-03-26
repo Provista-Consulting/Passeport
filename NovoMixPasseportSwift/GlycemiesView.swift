@@ -23,7 +23,7 @@ import UIKit
     @IBOutlet weak var pickerNight3: MyPickerView!
     
     // Custom view from the XIB file
-    var view: UIView!
+    var view: SpringView!
     
     // Day or night
     @IBInspectable var day : Bool = true {
@@ -78,12 +78,12 @@ import UIKit
         
     }
     
-    func loadViewFromNib() -> UIView {
+    func loadViewFromNib() -> SpringView {
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "GlycemiesView", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as UIView
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as SpringView
         return view
     }
 

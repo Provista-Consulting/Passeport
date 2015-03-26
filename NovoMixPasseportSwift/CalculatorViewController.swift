@@ -52,6 +52,9 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     var newDoseDay = 0
     var newDoseNight = 0
     
+    // MARK: - ViewController
+    // MARK: -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -79,8 +82,6 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 
             }
             
-            
-            
         } else {
             // If two injections
             if self.day {
@@ -102,6 +103,17 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.resultView.alpha = 0.0
+        
+        self.doseView.alpha = 0.0
+        self.glycemiesView.alpha = 0.0
+        
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -119,6 +131,7 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     */
     
     // MARK: - pickerView Delegate
+    // MARK: -
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // When a picker view change value
@@ -128,12 +141,16 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         if pickerView == self.objectifView.pickerMin {
             self.objectifMin = getPickerViewValue(self.objectifView.pickerMin.selectedRowInComponent(0), pos2: self.objectifView.pickerMin.selectedRowInComponent(1))
             
+            showDoseView()
+            
             calculDay()
             calculNight()
         }
         
         if pickerView == self.objectifView.pickerMax {
             self.objectifMax = getPickerViewValue(self.objectifView.pickerMax.selectedRowInComponent(0), pos2: self.objectifView.pickerMax.selectedRowInComponent(1))
+            
+            showDoseView()
             
             calculDay()
             calculNight()
@@ -224,6 +241,7 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     // MARK: - Actions
+    // MARK: -
     
     @IBAction func sliderAction(sender: AnyObject!) {
         
@@ -265,6 +283,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
     }
     
+    
+    
     @IBAction func jourAction(sender: AnyObject!) {
         
         setupForDay()
@@ -276,6 +296,7 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     // MARK: - Helpers
+    // MARK: -
     
     func defaultValue() {
         
@@ -319,6 +340,9 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         self.doseView.sliderDay.addTarget(self, action: "sliderAction:", forControlEvents: UIControlEvents.ValueChanged)
         self.doseView.sliderNight.addTarget(self, action: "sliderAction:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.doseView.sliderDay.addTarget(self, action: "showGlycemieViewAction:", forControlEvents: (UIControlEvents.TouchUpInside | UIControlEvents.TouchUpOutside))
+        self.doseView.sliderNight.addTarget(self, action: "showGlycemieViewAction:", forControlEvents: (UIControlEvents.TouchUpInside | UIControlEvents.TouchUpOutside))
         
         self.resultView.labelDayResult.text = ""
         self.resultView.labelDayResultSecond.text = ""
@@ -388,7 +412,42 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
     }
     
+    func showDoseView () {
+        
+        if self.objectifMin > 0 && self.objectifMax > 0 && self.objectifMax > self.objectifMin && self.doseView.alpha == 0 {
+            
+            self.doseView.alpha = 1.0
+            
+            self.doseView.view.animation = "slideUp"
+            self.doseView.view.animate()
+        }
+    }
+    
+    @IBAction func showGlycemieViewAction (sender: AnyObject!) {
+        
+        if self.glycemiesView.alpha == 0 {
+            
+            self.glycemiesView.alpha = 1.0
+            
+            self.glycemiesView.view.animation = "slideUp"
+            self.glycemiesView.view.animate()
+        }
+    }
+    
+    func showResultView () {
+        
+        if self.resultView.alpha == 0 {
+            
+            self.resultView.alpha = 1.0
+            
+            self.resultView.view.animation = "fadeInRight"
+            self.resultView.view.animate()
+        }
+        
+    }
+    
     // MARK: - Calcul functions
+    // MARK: -
 
     func calculDay () {
         
@@ -483,6 +542,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                         self.resultView.labelNightDoseAlert.hidden = true
                     }
                 }
+                
+                showResultView()
                 
         } else {
             
@@ -590,6 +651,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                         self.resultView.labelDayDoseAlert.hidden = true
                     }
                 }
+                
+                showResultView()
                 
         } else {
             
