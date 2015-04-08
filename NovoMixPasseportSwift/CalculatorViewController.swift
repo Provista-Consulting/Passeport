@@ -10,7 +10,9 @@ import UIKit
 
 class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    // Outlets for Views
+    // MARK: - Outlets for Views
+    // MARK: -
+    
     @IBOutlet weak var objectifView: ObjectifView!
     @IBOutlet weak var doseView: DoseView!
     @IBOutlet weak var glycemiesView: GlycemiesView!
@@ -21,7 +23,10 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var dayButton: MyButton!
     @IBOutlet weak var nightButton: MyButton!
     
-    // Local properties
+    var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 40))
+    
+    // MARK: - Local properties
+    // MARK: -
     
     var pickerDataNumber = ["0", "1", "2", "3", "4"]
     var pickerDataDecimal : [String] = []
@@ -33,7 +38,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     var day = true
     
-    // input values
+    // MARK: - input values
+    // MARK: -
     
     var objectifMin : Double = 0
     var objectifMax : Double = 0
@@ -73,21 +79,21 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 self.dayButton.enabled = false
                 self.nightButton.hidden = true
                 setupForDay()
-                
             } else {
                 self.nightButton.transform = CGAffineTransformMakeTranslation(-55, 0)
                 self.nightButton.enabled = false
                 self.dayButton.hidden = true
                 setupForNight()
-                
             }
             
         } else {
             // If two injections
             if self.day {
                 setupForDay()
+                
             } else {
                 setupForNight()
+                
             }
             
             self.doseView.sliderDay.value = 6.0
@@ -99,6 +105,7 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             self.doseView.labelDay.text = "6 Unités"
             self.doseView.labelNight.text = "6 Unités"
             
+            self.dayButton.enabled = false
         }
         
     }
@@ -119,17 +126,6 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     // MARK: - pickerView Delegate
     // MARK: -
@@ -289,17 +285,31 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBAction func jourAction(sender: AnyObject!) {
         
         setupForDay()
+        
+        self.dayButton.enabled = false
+        self.nightButton.enabled = true
     }
     
     @IBAction func soirAction(sender: AnyObject) {
         
         setupForNight()
+        
+        self.dayButton.enabled = true
+        self.nightButton.enabled = false
+    }
+    
+    
+    @IBAction func close(sender: AnyObject) {
+        
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: - Helpers
     // MARK: -
     
     func defaultValue() {
+        
+        createNavigationStyle()
         
         for var i = 0; i < 100; i++ {
             
@@ -402,6 +412,10 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.resultView.day = true
         self.bg.image = UIImage(named: "bg-jour")
         
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlueColorDark()
+        self.setNeedsStatusBarAppearanceUpdate()
+
+        
     }
     
     func setupForNight () {
@@ -410,6 +424,9 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.glycemiesView.day = false
         self.resultView.day = false
         self.bg.image = UIImage(named: "bg-soir")
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatBlackColor()
+        self.setNeedsStatusBarAppearanceUpdate()
         
     }
     
@@ -667,7 +684,40 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             // Hide animation
             //[self hideAnimation];
         }
-
+    }
+    
+    // MARK: - UI
+    // MARK: -
+    
+    func createNavigationStyle () {
+        
+        // Create custom label for titleView
+        //self.titleLabel.text = "Simulation"
+        self.titleLabel.backgroundColor = UIColor.clearColor()
+        self.titleLabel.adjustsFontSizeToFitWidth = true
+        self.titleLabel.textAlignment = .Center
+        self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
+        
+        if self.oneInj {
+            if self.day {
+                self.titleLabel.text = "Une injection d'insuline : Jour"
+            } else {
+                self.titleLabel.text = "Une injection d'insuline : Soir"
+            }
+            
+        } else {
+            
+            self.titleLabel.text = "Deux injections d'insuline"
+            
+        }
+        
+        self.navigationItem.titleView = self.titleLabel
+    
+        // Customize navigation bar
+        self.navigationController?.navigationBar.translucent = true
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.titleLabel.textColor = UIColor.whiteColor()
         
     }
 }

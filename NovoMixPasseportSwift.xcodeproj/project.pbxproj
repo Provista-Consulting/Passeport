@@ -38,6 +38,20 @@
 		CA0F05D61AC4490A00BA3ABE /* NSString+Morphing.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D31AC4490A00BA3ABE /* NSString+Morphing.m */; };
 		CA0F05D71AC4490A00BA3ABE /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D51AC4490A00BA3ABE /* TOMSMorphingLabel.m */; };
 		CA0F05D91AC459CE00BA3ABE /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */; };
+		CA8886971ACD88D800BE0D55 /* TopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8886961ACD88D800BE0D55 /* TopButton.swift */; };
+		CAA070271AD15164000C8E70 /* FlexPenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA070261AD15164000C8E70 /* FlexPenViewController.swift */; };
+		CAD59EE21ACBF90500B82A56 /* SommaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD59EE11ACBF90500B82A56 /* SommaireView.swift */; };
+		CAD59EE41ACBFF8B00B82A56 /* SommaireView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD59EE31ACBFF8B00B82A56 /* SommaireView.xib */; };
+		CAD59EE61ACC029400B82A56 /* NovoNordiskLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD59EE51ACC029400B82A56 /* NovoNordiskLogo.swift */; };
+		CAD59EE81ACC02B100B82A56 /* NovoNordiskLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD59EE71ACC02B100B82A56 /* NovoNordiskLogo.xib */; };
+		CAD59EEB1ACC06CE00B82A56 /* Slogan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD59EEA1ACC06CE00B82A56 /* Slogan.swift */; };
+		CAD59EED1ACC071E00B82A56 /* Slogan.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD59EEC1ACC071E00B82A56 /* Slogan.xib */; };
+		CADEC28E1AC84CF400C046E1 /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CADEC2841AC84CF400C046E1 /* ChameleonStatusBar.m */; };
+		CADEC28F1AC84CF400C046E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADEC2851AC84CF400C046E1 /* Constants.swift */; };
+		CADEC2901AC84CF400C046E1 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CADEC2871AC84CF400C046E1 /* NSArray+Chameleon.m */; };
+		CADEC2911AC84CF400C046E1 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CADEC2891AC84CF400C046E1 /* UIColor+Chameleon.m */; };
+		CADEC2921AC84CF400C046E1 /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = CADEC28B1AC84CF400C046E1 /* UIColor+CIELAB.m */; };
+		CADEC2931AC84CF400C046E1 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CADEC28D1AC84CF400C046E1 /* UIViewController+Chameleon.m */; };
 		CAED02EE1ABED46F00022FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED02ED1ABED46F00022FE9 /* AppDelegate.swift */; };
 		CAED02F81ABED46F00022FE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAED02F61ABED46F00022FE9 /* LaunchScreen.xib */; };
 		CAED03041ABED46F00022FE9 /* NovoMixPasseportSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED03031ABED46F00022FE9 /* NovoMixPasseportSwiftTests.swift */; };
@@ -50,10 +64,6 @@
 		CAED03261ABED4A700022FE9 /* MyPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED031C1ABED4A700022FE9 /* MyPickerView.m */; };
 		CAED03271ABED4A700022FE9 /* InfoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED031E1ABED4A700022FE9 /* InfoButton.m */; };
 		CAED03281ABED4A700022FE9 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED031F1ABED4A700022FE9 /* MyButton.swift */; };
-		CAED03351ABED4E900022FE9 /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED032E1ABED4E900022FE9 /* ChameleonStatusBar.m */; };
-		CAED03361ABED4E900022FE9 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED03301ABED4E900022FE9 /* NSArray+Chameleon.m */; };
-		CAED03371ABED4E900022FE9 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED03321ABED4E900022FE9 /* UIColor+Chameleon.m */; };
-		CAED03381ABED4E900022FE9 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED03341ABED4E900022FE9 /* UIViewController+Chameleon.m */; };
 		CAED033C1ABED52300022FE9 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED033A1ABED52300022FE9 /* Thumbnail.swift */; };
 		CAED033D1ABED52300022FE9 /* Thumbnail.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAED033B1ABED52300022FE9 /* Thumbnail.xib */; };
 		CAED03401ABED54D00022FE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAED033F1ABED54D00022FE9 /* Images.xcassets */; };
@@ -117,6 +127,27 @@
 		CA0F05D41AC4490A00BA3ABE /* TOMSMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMSMorphingLabel.h; sourceTree = "<group>"; };
 		CA0F05D51AC4490A00BA3ABE /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabel.m; sourceTree = "<group>"; };
 		CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		CA8886961ACD88D800BE0D55 /* TopButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopButton.swift; sourceTree = "<group>"; };
+		CAA070261AD15164000C8E70 /* FlexPenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexPenViewController.swift; sourceTree = "<group>"; };
+		CAD59EE11ACBF90500B82A56 /* SommaireView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SommaireView.swift; sourceTree = "<group>"; };
+		CAD59EE31ACBFF8B00B82A56 /* SommaireView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SommaireView.xib; sourceTree = "<group>"; };
+		CAD59EE51ACC029400B82A56 /* NovoNordiskLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoNordiskLogo.swift; sourceTree = "<group>"; };
+		CAD59EE71ACC02B100B82A56 /* NovoNordiskLogo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NovoNordiskLogo.xib; sourceTree = "<group>"; };
+		CAD59EEA1ACC06CE00B82A56 /* Slogan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slogan.swift; sourceTree = "<group>"; };
+		CAD59EEC1ACC071E00B82A56 /* Slogan.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slogan.xib; sourceTree = "<group>"; };
+		CADEC2811AC84CF400C046E1 /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
+		CADEC2821AC84CF400C046E1 /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonMacros.h; sourceTree = "<group>"; };
+		CADEC2831AC84CF400C046E1 /* ChameleonStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonStatusBar.h; sourceTree = "<group>"; };
+		CADEC2841AC84CF400C046E1 /* ChameleonStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChameleonStatusBar.m; sourceTree = "<group>"; };
+		CADEC2851AC84CF400C046E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CADEC2861AC84CF400C046E1 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		CADEC2871AC84CF400C046E1 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		CADEC2881AC84CF400C046E1 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		CADEC2891AC84CF400C046E1 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		CADEC28A1AC84CF400C046E1 /* UIColor+CIELAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CIELAB.h"; sourceTree = "<group>"; };
+		CADEC28B1AC84CF400C046E1 /* UIColor+CIELAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CIELAB.m"; sourceTree = "<group>"; };
+		CADEC28C1AC84CF400C046E1 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		CADEC28D1AC84CF400C046E1 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		CAED02E81ABED46F00022FE9 /* NovoMixPasseportSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NovoMixPasseportSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAED02EC1ABED46F00022FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAED02ED1ABED46F00022FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,16 +173,6 @@
 		CAED031D1ABED4A700022FE9 /* InfoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoButton.h; sourceTree = "<group>"; };
 		CAED031E1ABED4A700022FE9 /* InfoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoButton.m; sourceTree = "<group>"; };
 		CAED031F1ABED4A700022FE9 /* MyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
-		CAED032B1ABED4E900022FE9 /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
-		CAED032C1ABED4E900022FE9 /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonMacros.h; sourceTree = "<group>"; };
-		CAED032D1ABED4E900022FE9 /* ChameleonStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonStatusBar.h; sourceTree = "<group>"; };
-		CAED032E1ABED4E900022FE9 /* ChameleonStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChameleonStatusBar.m; sourceTree = "<group>"; };
-		CAED032F1ABED4E900022FE9 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		CAED03301ABED4E900022FE9 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		CAED03311ABED4E900022FE9 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		CAED03321ABED4E900022FE9 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		CAED03331ABED4E900022FE9 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		CAED03341ABED4E900022FE9 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Chameleon.m"; sourceTree = "<group>"; };
 		CAED033A1ABED52300022FE9 /* Thumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		CAED033B1ABED52300022FE9 /* Thumbnail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Thumbnail.xib; sourceTree = "<group>"; };
 		CAED033F1ABED54D00022FE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -235,6 +256,61 @@
 			path = TOMSMorphingLabel;
 			sourceTree = "<group>";
 		};
+		CAD59EDF1ACBF89200B82A56 /* Simulator subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CAED03431ABED57800022FE9 /* ObjectifView.swift */,
+				CAED03441ABED57800022FE9 /* ObjectifView.xib */,
+				CAED03451ABED57800022FE9 /* DoseView.swift */,
+				CAED03461ABED57800022FE9 /* DoseView.xib */,
+				CAED03471ABED57800022FE9 /* GlycemiesView.swift */,
+				CAED03481ABED57800022FE9 /* GlycemiesView.xib */,
+				CAED03491ABED57800022FE9 /* ResultView.swift */,
+				CAED034A1ABED57800022FE9 /* ResultView.xib */,
+			);
+			name = "Simulator subviews";
+			sourceTree = "<group>";
+		};
+		CAD59EE01ACBF8AF00B82A56 /* Sommaire subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CAD59EE11ACBF90500B82A56 /* SommaireView.swift */,
+				CAD59EE31ACBFF8B00B82A56 /* SommaireView.xib */,
+			);
+			name = "Sommaire subviews";
+			sourceTree = "<group>";
+		};
+		CAD59EE91ACC05DA00B82A56 /* Logo + Slogan */ = {
+			isa = PBXGroup;
+			children = (
+				CAD59EE51ACC029400B82A56 /* NovoNordiskLogo.swift */,
+				CAD59EE71ACC02B100B82A56 /* NovoNordiskLogo.xib */,
+				CAD59EEA1ACC06CE00B82A56 /* Slogan.swift */,
+				CAD59EEC1ACC071E00B82A56 /* Slogan.xib */,
+			);
+			name = "Logo + Slogan";
+			sourceTree = "<group>";
+		};
+		CADEC2801AC84CF400C046E1 /* Chameleon */ = {
+			isa = PBXGroup;
+			children = (
+				CADEC2811AC84CF400C046E1 /* Chameleon.h */,
+				CADEC2821AC84CF400C046E1 /* ChameleonMacros.h */,
+				CADEC2831AC84CF400C046E1 /* ChameleonStatusBar.h */,
+				CADEC2841AC84CF400C046E1 /* ChameleonStatusBar.m */,
+				CADEC2851AC84CF400C046E1 /* Constants.swift */,
+				CADEC2861AC84CF400C046E1 /* NSArray+Chameleon.h */,
+				CADEC2871AC84CF400C046E1 /* NSArray+Chameleon.m */,
+				CADEC2881AC84CF400C046E1 /* UIColor+Chameleon.h */,
+				CADEC2891AC84CF400C046E1 /* UIColor+Chameleon.m */,
+				CADEC28A1AC84CF400C046E1 /* UIColor+CIELAB.h */,
+				CADEC28B1AC84CF400C046E1 /* UIColor+CIELAB.m */,
+				CADEC28C1AC84CF400C046E1 /* UIViewController+Chameleon.h */,
+				CADEC28D1AC84CF400C046E1 /* UIViewController+Chameleon.m */,
+			);
+			path = Chameleon;
+			sourceTree = "<group>";
+		};
 		CAED02DF1ABED46F00022FE9 = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +344,7 @@
 				CAED03571ABED5D400022FE9 /* CalculatorViewController.swift */,
 				CAED02F61ABED46F00022FE9 /* LaunchScreen.xib */,
 				CAED03531ABED5B600022FE9 /* Main.storyboard */,
+				CAA070261AD15164000C8E70 /* FlexPenViewController.swift */,
 				CAED033F1ABED54D00022FE9 /* Images.xcassets */,
 				CAED02EB1ABED46F00022FE9 /* Supporting Files */,
 			);
@@ -320,6 +397,7 @@
 				CAED031E1ABED4A700022FE9 /* InfoButton.m */,
 				CAED031F1ABED4A700022FE9 /* MyButton.swift */,
 				CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */,
+				CA8886961ACD88D800BE0D55 /* TopButton.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -327,28 +405,11 @@
 		CAED03291ABED4CF00022FE9 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				CADEC2801AC84CF400C046E1 /* Chameleon */,
 				CA0F05D11AC4490A00BA3ABE /* TOMSMorphingLabel */,
 				CA0F05971AC2D86100BA3ABE /* Spring */,
-				CAED032A1ABED4E900022FE9 /* Chameleon */,
 			);
 			name = Libs;
-			sourceTree = "<group>";
-		};
-		CAED032A1ABED4E900022FE9 /* Chameleon */ = {
-			isa = PBXGroup;
-			children = (
-				CAED032B1ABED4E900022FE9 /* Chameleon.h */,
-				CAED032C1ABED4E900022FE9 /* ChameleonMacros.h */,
-				CAED032D1ABED4E900022FE9 /* ChameleonStatusBar.h */,
-				CAED032E1ABED4E900022FE9 /* ChameleonStatusBar.m */,
-				CAED032F1ABED4E900022FE9 /* NSArray+Chameleon.h */,
-				CAED03301ABED4E900022FE9 /* NSArray+Chameleon.m */,
-				CAED03311ABED4E900022FE9 /* UIColor+Chameleon.h */,
-				CAED03321ABED4E900022FE9 /* UIColor+Chameleon.m */,
-				CAED03331ABED4E900022FE9 /* UIViewController+Chameleon.h */,
-				CAED03341ABED4E900022FE9 /* UIViewController+Chameleon.m */,
-			);
-			path = Chameleon;
 			sourceTree = "<group>";
 		};
 		CAED03391ABED4FF00022FE9 /* Thumbnail */ = {
@@ -363,14 +424,9 @@
 		CAED033E1ABED52C00022FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CAED03431ABED57800022FE9 /* ObjectifView.swift */,
-				CAED03441ABED57800022FE9 /* ObjectifView.xib */,
-				CAED03451ABED57800022FE9 /* DoseView.swift */,
-				CAED03461ABED57800022FE9 /* DoseView.xib */,
-				CAED03471ABED57800022FE9 /* GlycemiesView.swift */,
-				CAED03481ABED57800022FE9 /* GlycemiesView.xib */,
-				CAED03491ABED57800022FE9 /* ResultView.swift */,
-				CAED034A1ABED57800022FE9 /* ResultView.xib */,
+				CAD59EE01ACBF8AF00B82A56 /* Sommaire subviews */,
+				CAD59EDF1ACBF89200B82A56 /* Simulator subviews */,
+				CAD59EE91ACC05DA00B82A56 /* Logo + Slogan */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -424,6 +480,7 @@
 				TargetAttributes = {
 					CAED02E71ABED46F00022FE9 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = QCZHBGDJF6;
 					};
 					CAED02FC1ABED46F00022FE9 = {
 						CreatedOnToolsVersion = 6.2;
@@ -456,15 +513,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAED03521ABED57800022FE9 /* ResultView.xib in Resources */,
+				CAD59EE41ACBFF8B00B82A56 /* SommaireView.xib in Resources */,
 				CAED03421ABED56300022FE9 /* uc.jpg in Resources */,
 				CAED034E1ABED57800022FE9 /* DoseView.xib in Resources */,
 				CAED034C1ABED57800022FE9 /* ObjectifView.xib in Resources */,
 				CAED03401ABED54D00022FE9 /* Images.xcassets in Resources */,
 				CAED02F81ABED46F00022FE9 /* LaunchScreen.xib in Resources */,
+				CAD59EED1ACC071E00B82A56 /* Slogan.xib in Resources */,
 				CAED03541ABED5B600022FE9 /* Main.storyboard in Resources */,
 				CAED033D1ABED52300022FE9 /* Thumbnail.xib in Resources */,
 				CA0F05C01AC2D86100BA3ABE /* Info.plist in Resources */,
 				CA0F05C31AC2D86100BA3ABE /* LoadingView.xib in Resources */,
+				CAD59EE81ACC02B100B82A56 /* NovoNordiskLogo.xib in Resources */,
 				CAED03501ABED57800022FE9 /* GlycemiesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,28 +543,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAED03381ABED4E900022FE9 /* UIViewController+Chameleon.m in Sources */,
 				CAED03221ABED4A700022FE9 /* HomeButton.m in Sources */,
 				CAED035A1ABED5D400022FE9 /* CalculatorViewController.swift in Sources */,
 				CA0F05D71AC4490A00BA3ABE /* TOMSMorphingLabel.m in Sources */,
+				CADEC2911AC84CF400C046E1 /* UIColor+Chameleon.m in Sources */,
 				CAED03201ABED4A700022FE9 /* ShowHideButton.m in Sources */,
 				CAED034F1ABED57800022FE9 /* GlycemiesView.swift in Sources */,
 				CA0F05CF1AC2D86100BA3ABE /* TransitionZoom.swift in Sources */,
+				CADEC2921AC84CF400C046E1 /* UIColor+CIELAB.m in Sources */,
 				CA0F05BF1AC2D86100BA3ABE /* ImageLoader.swift in Sources */,
 				CA0F05CC1AC2D86100BA3ABE /* SpringTextView.swift in Sources */,
 				CAED03591ABED5D400022FE9 /* SimulatorViewController.swift in Sources */,
+				CAD59EE61ACC029400B82A56 /* NovoNordiskLogo.swift in Sources */,
 				CAED03271ABED4A700022FE9 /* InfoButton.m in Sources */,
 				CA0F05BC1AC2D86100BA3ABE /* DesignableTextField.swift in Sources */,
+				CAD59EE21ACBF90500B82A56 /* SommaireView.swift in Sources */,
 				CA0F05CA1AC2D86100BA3ABE /* SpringLabel.swift in Sources */,
+				CADEC2931AC84CF400C046E1 /* UIViewController+Chameleon.m in Sources */,
 				CA0F05B91AC2D86100BA3ABE /* DesignableImageView.swift in Sources */,
-				CAED03361ABED4E900022FE9 /* NSArray+Chameleon.m in Sources */,
 				CA0F05C91AC2D86100BA3ABE /* SpringImageView.swift in Sources */,
+				CAA070271AD15164000C8E70 /* FlexPenViewController.swift in Sources */,
 				CAED03241ABED4A700022FE9 /* MultilineLabel.m in Sources */,
 				CA0F05B51AC2D86100BA3ABE /* AsyncButton.swift in Sources */,
 				CA0F05D91AC459CE00BA3ABE /* MyNavigationController.swift in Sources */,
 				CAED034D1ABED57800022FE9 /* DoseView.swift in Sources */,
 				CA0F05C51AC2D86100BA3ABE /* SoundPlayer.swift in Sources */,
+				CADEC2901AC84CF400C046E1 /* NSArray+Chameleon.m in Sources */,
 				CA0F05CB1AC2D86100BA3ABE /* SpringTextField.swift in Sources */,
+				CADEC28E1AC84CF400C046E1 /* ChameleonStatusBar.m in Sources */,
 				CA0F05C71AC2D86100BA3ABE /* SpringAnimation.swift in Sources */,
 				CA0F05CD1AC2D86100BA3ABE /* SpringView.swift in Sources */,
 				CA0F05B61AC2D86100BA3ABE /* AsyncImageView.swift in Sources */,
@@ -513,16 +579,16 @@
 				CA0F05CE1AC2D86100BA3ABE /* TransitionManager.swift in Sources */,
 				CAED03211ABED4A700022FE9 /* RButton.m in Sources */,
 				CAED03231ABED4A700022FE9 /* ContainerView.m in Sources */,
+				CA8886971ACD88D800BE0D55 /* TopButton.swift in Sources */,
 				CA0F05C11AC2D86100BA3ABE /* KeyboardLayoutConstraint.swift in Sources */,
 				CAED03581ABED5D400022FE9 /* ViewController.swift in Sources */,
 				CA0F05C41AC2D86100BA3ABE /* Misc.swift in Sources */,
-				CAED03371ABED4E900022FE9 /* UIColor+Chameleon.m in Sources */,
 				CAED03281ABED4A700022FE9 /* MyButton.swift in Sources */,
-				CAED03351ABED4E900022FE9 /* ChameleonStatusBar.m in Sources */,
 				CA0F05C61AC2D86100BA3ABE /* Spring.swift in Sources */,
 				CA0F05C81AC2D86100BA3ABE /* SpringButton.swift in Sources */,
 				CAED034B1ABED57800022FE9 /* ObjectifView.swift in Sources */,
 				CAED03261ABED4A700022FE9 /* MyPickerView.m in Sources */,
+				CAD59EEB1ACC06CE00B82A56 /* Slogan.swift in Sources */,
 				CA0F05BE1AC2D86100BA3ABE /* DesignableView.swift in Sources */,
 				CA0F05BB1AC2D86100BA3ABE /* DesignableTabBarController.swift in Sources */,
 				CAED02EE1ABED46F00022FE9 /* AppDelegate.swift in Sources */,
@@ -532,6 +598,7 @@
 				CAED033C1ABED52300022FE9 /* Thumbnail.swift in Sources */,
 				CA0F05BA1AC2D86100BA3ABE /* DesignableLabel.swift in Sources */,
 				CA0F05D61AC4490A00BA3ABE /* NSString+Morphing.m in Sources */,
+				CADEC28F1AC84CF400C046E1 /* Constants.swift in Sources */,
 				CA0F05C21AC2D86100BA3ABE /* LoadingView.swift in Sources */,
 				CAED03251ABED4A700022FE9 /* MyTextField.m in Sources */,
 			);
@@ -651,10 +718,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NovoMixPasseportSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "NovoMixPasseportSwift/NovoMixPasseportSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -665,10 +735,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NovoMixPasseportSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "NovoMixPasseportSwift/NovoMixPasseportSwift-Bridging-Header.h";
 			};
 			name = Release;
