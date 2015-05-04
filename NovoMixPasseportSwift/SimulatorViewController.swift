@@ -44,7 +44,7 @@ class SimulatorViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        var calculatorVC = segue.destinationViewController as CalculatorViewController
+        var calculatorVC = segue.destinationViewController as! CalculatorViewController
         
         if sender?.tag == 100 {
             // Night + 1 Inj

@@ -83,7 +83,7 @@ import UIKit
         let nib = UINib(nibName: "GlycemiesView", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as SpringView
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as! SpringView
         return view
     }
 

@@ -15,8 +15,8 @@ import UIKit
     // Our custom view from the XIB file
     var view: UIView!
     
-    override init() {
-        super.init()
+    convenience init() {
+        self.init(frame:CGRectZero)
         xibSetup()
     }
     
@@ -25,7 +25,7 @@ import UIKit
         xibSetup()
     }
     
-    required override init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
     }
@@ -49,7 +49,7 @@ import UIKit
         let nib = UINib(nibName: "SommaireView", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as UIView
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         return view
     }
 

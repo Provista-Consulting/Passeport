@@ -13,6 +13,7 @@ class TopButton: UIButton {
     override var highlighted : Bool {
         
         didSet {
+            
             self.alpha = self.highlighted ? 0.5 : 1.0
             self.backgroundColor = self.highlighted ? UIColor.whiteColor() : UIColor.clearColor()
         }
