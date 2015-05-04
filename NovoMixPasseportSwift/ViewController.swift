@@ -322,20 +322,20 @@ class ViewController: UIViewController {
 
     @IBAction func showSommaire(sender: AnyObject!) {
         
-        if (sender as UIBarButtonItem).title == "Fermer" {
-            
-            (sender as UIBarButtonItem).title = "Sommaire"
-            
-            self.sommaireView.animation = "fadeOut"
-            
-            self.sommaireView.animate()
-            
-        } else {
-            self.sommaireView.hidden = false
-            self.sommaireView.animation = "fadeIn"
-            self.sommaireView.animate()
-            (sender as UIBarButtonItem).title = "Fermer"
-        }
+//        if (sender as UIBarButtonItem).title == "Fermer" {
+//            
+//            (sender as UIBarButtonItem).title = "Sommaire"
+//            
+//            self.sommaireView.animation = "fadeOut"
+//            
+//            self.sommaireView.animate()
+//            
+//        } else {
+//            self.sommaireView.hidden = false
+//            self.sommaireView.animation = "fadeIn"
+//            self.sommaireView.animate()
+//            (sender as UIBarButtonItem).title = "Fermer"
+//        }
         
     }
     
