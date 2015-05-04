@@ -78,22 +78,27 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 self.dayButton.transform = CGAffineTransformMakeTranslation(60, 0)
                 self.dayButton.enabled = false
                 self.nightButton.hidden = true
-                setupForDay()
+                
+                setupForNight()
+                
             } else {
                 self.nightButton.transform = CGAffineTransformMakeTranslation(-55, 0)
                 self.nightButton.enabled = false
                 self.dayButton.hidden = true
-                setupForNight()
+                
+                setupForDay()
             }
             
         } else {
             // If two injections
             if self.day {
-                setupForDay()
                 
-            } else {
+                
                 setupForNight()
                 
+            } else {
+                
+                setupForDay()
             }
             
             self.doseView.sliderDay.value = 6.0
@@ -283,8 +288,8 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBAction func jourAction(sender: AnyObject!) {
+        setupForNight()
         
-        setupForDay()
         
         self.dayButton.enabled = false
         self.nightButton.enabled = true
@@ -292,7 +297,9 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBAction func soirAction(sender: AnyObject) {
         
-        setupForNight()
+        
+        
+        setupForDay()
         
         self.dayButton.enabled = true
         self.nightButton.enabled = false
@@ -410,12 +417,10 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.doseView.day = false
         self.glycemiesView.day = true
         self.resultView.day = true
-        self.bg.image = UIImage(named: "bg-jour")
+        self.bg.image = UIImage(named: "bg-soir")
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlueColorDark()
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatBlackColor()
         self.setNeedsStatusBarAppearanceUpdate()
-
-        
     }
     
     func setupForNight () {
@@ -423,9 +428,9 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         self.doseView.day = true
         self.glycemiesView.day = false
         self.resultView.day = false
-        self.bg.image = UIImage(named: "bg-soir")
+        self.bg.image = UIImage(named: "bg-jour")
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatBlackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlueColorDark()
         self.setNeedsStatusBarAppearanceUpdate()
         
     }
