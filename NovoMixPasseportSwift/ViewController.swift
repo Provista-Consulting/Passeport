@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         self.sommaireView.buttonFlexPen.addTarget(self, action: "showFlexPenVC:", forControlEvents: UIControlEvents.TouchUpInside)
         self.sommaireView.buttonAdapteDose.addTarget(self, action: "showAdapteDoseVC:", forControlEvents: UIControlEvents.TouchUpInside)
         self.sommaireView.buttonHypoglycemie.addTarget(self, action: "showHypoglycemieVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.sommaireView.buttonNovoTwist.addTarget(self, action: "showNovoTwistVC:", forControlEvents: UIControlEvents.TouchUpInside)
         
     }
 
@@ -74,19 +75,27 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func showNovoTwistVC (sender: AnyObject!) {
+        
+        var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc : NovoTwistViewController = storyboard.instantiateViewControllerWithIdentifier("NovoTwistVC") as! NovoTwistViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
     @IBAction func showHideButtonAction(sender: AnyObject!) {
         
         UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
             // Start animation
             
-            if (self.buttonsContainerShow) {
+            if self.buttonsContainerShow {
                 
                 self.buttonsContainer.transform = CGAffineTransformMakeTranslation(215.0, 0.0)
                 self.buttonsContainerShow = false
                 
-                
                 self.showHideButton.transform = CGAffineTransformMakeRotation(0.0)
-                ;
+                
             } else {
                 
                 self.buttonsContainer.transform = CGAffineTransformMakeTranslation(0.0, 0.0)
