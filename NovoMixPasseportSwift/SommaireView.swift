@@ -11,6 +11,9 @@ import UIKit
 @IBDesignable class SommaireView: SpringView {
     
     @IBOutlet weak var buttonFlexPen: TopButton!
+    @IBOutlet weak var buttonAdapteDose: TopButton!
+    @IBOutlet weak var buttonNovoTwist: TopButton!
+    @IBOutlet weak var buttonHypoglycemie: TopButton!
     
     // Our custom view from the XIB file
     var view: UIView!
