@@ -25,21 +25,8 @@ class FlexPenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     func createNavigationStyle () {
         
-        // Create custom label for titleView
-        //self.titleLabel.text = "Simulation"
         self.titleLabel.backgroundColor = UIColor.clearColor()
         self.titleLabel.adjustsFontSizeToFitWidth = true
         self.titleLabel.textColor = UIColor.blackColor()
@@ -47,7 +34,6 @@ class FlexPenViewController: UIViewController {
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
         self.titleLabel.text = "Guide d’utilisation du FlexPen®"
         self.navigationItem.titleView = self.titleLabel
-        
         
         // Customize navigation bar
         self.navigationController?.navigationBar.translucent = true
