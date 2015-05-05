@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         /* Actions */
         self.sommaireView.buttonFlexPen.addTarget(self, action: "showFlexPenVC:", forControlEvents: UIControlEvents.TouchUpInside)
         self.sommaireView.buttonAdapteDose.addTarget(self, action: "showAdapteDoseVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.sommaireView.buttonHypoglycemie.addTarget(self, action: "showHypoglycemieVC:", forControlEvents: UIControlEvents.TouchUpInside)
         
     }
 
@@ -55,12 +56,20 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    
     @IBAction func showAdapteDoseVC (sender: AnyObject!) {
         
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : AdapteDoseViewController = storyboard.instantiateViewControllerWithIdentifier("AdapteDoseVC") as! AdapteDoseViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func showHypoglycemieVC (sender: AnyObject!) {
+        
+        var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc : HypoglycemieViewController = storyboard.instantiateViewControllerWithIdentifier("HypoglycemieVC") as! HypoglycemieViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

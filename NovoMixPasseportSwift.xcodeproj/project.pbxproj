@@ -11,6 +11,7 @@
 		CA0F05D71AC4490A00BA3ABE /* TOMSMorphingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D51AC4490A00BA3ABE /* TOMSMorphingLabel.m */; };
 		CA0F05D91AC459CE00BA3ABE /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */; };
 		CA2B1B7E1AF8D74800020298 /* AdapteDoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B7D1AF8D74800020298 /* AdapteDoseViewController.swift */; };
+		CA2B1B801AF8DB3200020298 /* HypoglycemieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B7F1AF8DB3200020298 /* HypoglycemieViewController.swift */; };
 		CA8138591AF7B30F0066030B /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81383B1AF7B30F0066030B /* AsyncButton.swift */; };
 		CA81385A1AF7B30F0066030B /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81383C1AF7B30F0066030B /* AsyncImageView.swift */; };
 		CA81385B1AF7B30F0066030B /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81383D1AF7B30F0066030B /* AutoTextView.swift */; };
@@ -101,6 +102,7 @@
 		CA0F05D51AC4490A00BA3ABE /* TOMSMorphingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMSMorphingLabel.m; sourceTree = "<group>"; };
 		CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		CA2B1B7D1AF8D74800020298 /* AdapteDoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapteDoseViewController.swift; sourceTree = "<group>"; };
+		CA2B1B7F1AF8DB3200020298 /* HypoglycemieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoglycemieViewController.swift; sourceTree = "<group>"; };
 		CA81383B1AF7B30F0066030B /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		CA81383C1AF7B30F0066030B /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		CA81383D1AF7B30F0066030B /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				CAED03571ABED5D400022FE9 /* CalculatorViewController.swift */,
 				CAA070261AD15164000C8E70 /* FlexPenViewController.swift */,
 				CA2B1B7D1AF8D74800020298 /* AdapteDoseViewController.swift */,
+				CA2B1B7F1AF8DB3200020298 /* HypoglycemieViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				CA81386A1AF7B30F0066030B /* SoundPlayer.swift in Sources */,
 				CA81385D1AF7B30F0066030B /* DesignableButton.swift in Sources */,
 				CAED034B1ABED57800022FE9 /* ObjectifView.swift in Sources */,
+				CA2B1B801AF8DB3200020298 /* HypoglycemieViewController.swift in Sources */,
 				CA8138751AF7B30F0066030B /* UnwindSegue.swift in Sources */,
 				CAED03261ABED4A700022FE9 /* MyPickerView.m in Sources */,
 				CA81385E1AF7B30F0066030B /* DesignableImageView.swift in Sources */,
