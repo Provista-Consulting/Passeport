@@ -157,7 +157,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGH-6b-sj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480" y="-407"/>
+            <point key="canvasLocation" x="2422" y="-1472"/>
+        </scene>
+        <!--Adapte Dose View Controller-->
+        <scene sceneID="Z5Z-wS-wpw">
+            <objects>
+                <viewController storyboardIdentifier="AdapteDoseVC" id="FKl-gi-sxW" customClass="AdapteDoseViewController" customModule="NovoMixPasseportSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b6t-fy-kRa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="c6F-6X-D7s" customClass="Slogan" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                                <rect key="frame" x="16" y="714" width="82" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="8Ja-bx-Coq" customClass="NovoNordiskLogo" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                                <rect key="frame" x="936" y="696" width="72" height="52"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6x-R3-yWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="-606"/>
         </scene>
         <!--Simulator View Controller-->
         <scene sceneID="fZK-oA-8I5">

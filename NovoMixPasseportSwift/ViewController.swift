@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         
         /* Actions */
         self.sommaireView.buttonFlexPen.addTarget(self, action: "showFlexPenVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.sommaireView.buttonAdapteDose.addTarget(self, action: "showAdapteDoseVC:", forControlEvents: UIControlEvents.TouchUpInside)
         
     }
 
@@ -50,6 +51,16 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : FlexPenViewController = storyboard.instantiateViewControllerWithIdentifier("FlexPenVC") as! FlexPenViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func showAdapteDoseVC (sender: AnyObject!) {
+        
+        var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc : AdapteDoseViewController = storyboard.instantiateViewControllerWithIdentifier("AdapteDoseVC") as! AdapteDoseViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
