@@ -13,6 +13,9 @@
 		CA2B1B7E1AF8D74800020298 /* AdapteDoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B7D1AF8D74800020298 /* AdapteDoseViewController.swift */; };
 		CA2B1B801AF8DB3200020298 /* HypoglycemieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B7F1AF8DB3200020298 /* HypoglycemieViewController.swift */; };
 		CA2B1B821AF8DDCC00020298 /* NovoTwistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B811AF8DDCC00020298 /* NovoTwistViewController.swift */; };
+		CA2B1B851AF900DB00020298 /* ContainerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B841AF900DB00020298 /* ContainerPresentation.swift */; };
+		CA2B1B871AF90D9D00020298 /* buttonMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B861AF90D9D00020298 /* buttonMenu.swift */; };
+		CA2B1B891AF90F7100020298 /* buttonMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA2B1B881AF90F7100020298 /* buttonMenu.xib */; };
 		CA8138591AF7B30F0066030B /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81383B1AF7B30F0066030B /* AsyncButton.swift */; };
 		CA81385A1AF7B30F0066030B /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81383C1AF7B30F0066030B /* AsyncImageView.swift */; };
 		CA81385B1AF7B30F0066030B /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA81383D1AF7B30F0066030B /* AutoTextView.swift */; };
@@ -43,7 +46,13 @@
 		CA8138741AF7B30F0066030B /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8138571AF7B30F0066030B /* TransitionZoom.swift */; };
 		CA8138751AF7B30F0066030B /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8138581AF7B30F0066030B /* UnwindSegue.swift */; };
 		CA8886971ACD88D800BE0D55 /* TopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8886961ACD88D800BE0D55 /* TopButton.swift */; };
+		CA91436F1AFA5D92001AAA20 /* AgiterSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA91436E1AFA5D92001AAA20 /* AgiterSubview.swift */; };
+		CA9143711AFA5E9C001AAA20 /* AgiterSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9143701AFA5E9C001AAA20 /* AgiterSubview.xib */; };
 		CAA070271AD15164000C8E70 /* FlexPenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA070261AD15164000C8E70 /* FlexPenViewController.swift */; };
+		CACB3E451AFB85AA00FEC309 /* agiter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E411AFB85AA00FEC309 /* agiter.mp4 */; };
+		CACB3E461AFB85AA00FEC309 /* injecter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E421AFB85AA00FEC309 /* injecter.mp4 */; };
+		CACB3E471AFB85AA00FEC309 /* purger.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E431AFB85AA00FEC309 /* purger.mp4 */; };
+		CACB3E481AFB85AA00FEC309 /* selectionner.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E441AFB85AA00FEC309 /* selectionner.mp4 */; };
 		CAD59EE21ACBF90500B82A56 /* SommaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD59EE11ACBF90500B82A56 /* SommaireView.swift */; };
 		CAD59EE41ACBFF8B00B82A56 /* SommaireView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAD59EE31ACBFF8B00B82A56 /* SommaireView.xib */; };
 		CAD59EE61ACC029400B82A56 /* NovoNordiskLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD59EE51ACC029400B82A56 /* NovoNordiskLogo.swift */; };
@@ -105,6 +114,9 @@
 		CA2B1B7D1AF8D74800020298 /* AdapteDoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapteDoseViewController.swift; sourceTree = "<group>"; };
 		CA2B1B7F1AF8DB3200020298 /* HypoglycemieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoglycemieViewController.swift; sourceTree = "<group>"; };
 		CA2B1B811AF8DDCC00020298 /* NovoTwistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoTwistViewController.swift; sourceTree = "<group>"; };
+		CA2B1B841AF900DB00020298 /* ContainerPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerPresentation.swift; sourceTree = "<group>"; };
+		CA2B1B861AF90D9D00020298 /* buttonMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buttonMenu.swift; sourceTree = "<group>"; };
+		CA2B1B881AF90F7100020298 /* buttonMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buttonMenu.xib; sourceTree = "<group>"; };
 		CA81383B1AF7B30F0066030B /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		CA81383C1AF7B30F0066030B /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		CA81383D1AF7B30F0066030B /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -136,7 +148,13 @@
 		CA8138571AF7B30F0066030B /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		CA8138581AF7B30F0066030B /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		CA8886961ACD88D800BE0D55 /* TopButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopButton.swift; sourceTree = "<group>"; };
+		CA91436E1AFA5D92001AAA20 /* AgiterSubview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgiterSubview.swift; sourceTree = "<group>"; };
+		CA9143701AFA5E9C001AAA20 /* AgiterSubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgiterSubview.xib; sourceTree = "<group>"; };
 		CAA070261AD15164000C8E70 /* FlexPenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexPenViewController.swift; sourceTree = "<group>"; };
+		CACB3E411AFB85AA00FEC309 /* agiter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = agiter.mp4; sourceTree = "<group>"; };
+		CACB3E421AFB85AA00FEC309 /* injecter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = injecter.mp4; sourceTree = "<group>"; };
+		CACB3E431AFB85AA00FEC309 /* purger.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purger.mp4; sourceTree = "<group>"; };
+		CACB3E441AFB85AA00FEC309 /* selectionner.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = selectionner.mp4; sourceTree = "<group>"; };
 		CAD59EE11ACBF90500B82A56 /* SommaireView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SommaireView.swift; sourceTree = "<group>"; };
 		CAD59EE31ACBFF8B00B82A56 /* SommaireView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SommaireView.xib; sourceTree = "<group>"; };
 		CAD59EE51ACC029400B82A56 /* NovoNordiskLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoNordiskLogo.swift; sourceTree = "<group>"; };
@@ -279,6 +297,26 @@
 			path = Spring;
 			sourceTree = "<group>";
 		};
+		CA91436D1AFA5D56001AAA20 /* FlexPen */ = {
+			isa = PBXGroup;
+			children = (
+				CA91436E1AFA5D92001AAA20 /* AgiterSubview.swift */,
+				CA9143701AFA5E9C001AAA20 /* AgiterSubview.xib */,
+			);
+			name = FlexPen;
+			sourceTree = "<group>";
+		};
+		CACB3E401AFB857300FEC309 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				CACB3E411AFB85AA00FEC309 /* agiter.mp4 */,
+				CACB3E421AFB85AA00FEC309 /* injecter.mp4 */,
+				CACB3E431AFB85AA00FEC309 /* purger.mp4 */,
+				CACB3E441AFB85AA00FEC309 /* selectionner.mp4 */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		CAD59EDF1ACBF89200B82A56 /* Simulator subviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +395,7 @@
 			children = (
 				CAED030E1ABED4A600022FE9 /* NovoMixPasseportSwift-Bridging-Header.h */,
 				CAED03411ABED56300022FE9 /* uc.jpg */,
+				CACB3E401AFB857300FEC309 /* Files */,
 				CAED03291ABED4CF00022FE9 /* Libs */,
 				CAED030D1ABED48D00022FE9 /* UI */,
 				CAED03391ABED4FF00022FE9 /* Thumbnail */,
@@ -418,6 +457,9 @@
 				CAED031F1ABED4A700022FE9 /* MyButton.swift */,
 				CA0F05D81AC459CE00BA3ABE /* MyNavigationController.swift */,
 				CA8886961ACD88D800BE0D55 /* TopButton.swift */,
+				CA2B1B841AF900DB00020298 /* ContainerPresentation.swift */,
+				CA2B1B861AF90D9D00020298 /* buttonMenu.swift */,
+				CA2B1B881AF90F7100020298 /* buttonMenu.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -444,6 +486,7 @@
 		CAED033E1ABED52C00022FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA91436D1AFA5D56001AAA20 /* FlexPen */,
 				CAD59EE01ACBF8AF00B82A56 /* Sommaire subviews */,
 				CAD59EDF1ACBF89200B82A56 /* Simulator subviews */,
 				CAD59EE91ACC05DA00B82A56 /* Logo + Slogan */,
@@ -532,19 +575,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACB3E451AFB85AA00FEC309 /* agiter.mp4 in Resources */,
 				CAED03521ABED57800022FE9 /* ResultView.xib in Resources */,
+				CACB3E471AFB85AA00FEC309 /* purger.mp4 in Resources */,
 				CAD59EE41ACBFF8B00B82A56 /* SommaireView.xib in Resources */,
 				CAED03421ABED56300022FE9 /* uc.jpg in Resources */,
+				CA9143711AFA5E9C001AAA20 /* AgiterSubview.xib in Resources */,
 				CAED034E1ABED57800022FE9 /* DoseView.xib in Resources */,
 				CAED034C1ABED57800022FE9 /* ObjectifView.xib in Resources */,
 				CAED03401ABED54D00022FE9 /* Images.xcassets in Resources */,
 				CAED02F81ABED46F00022FE9 /* LaunchScreen.xib in Resources */,
+				CACB3E461AFB85AA00FEC309 /* injecter.mp4 in Resources */,
 				CAD59EED1ACC071E00B82A56 /* Slogan.xib in Resources */,
 				CAED03541ABED5B600022FE9 /* Main.storyboard in Resources */,
 				CAED033D1ABED52300022FE9 /* Thumbnail.xib in Resources */,
 				CAD59EE81ACC02B100B82A56 /* NovoNordiskLogo.xib in Resources */,
 				CA8138681AF7B30F0066030B /* LoadingView.xib in Resources */,
+				CA2B1B891AF90F7100020298 /* buttonMenu.xib in Resources */,
 				CAED03501ABED57800022FE9 /* GlycemiesView.xib in Resources */,
+				CACB3E481AFB85AA00FEC309 /* selectionner.mp4 in Resources */,
 				CA8138651AF7B30F0066030B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +612,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2B1B851AF900DB00020298 /* ContainerPresentation.swift in Sources */,
 				CA8138731AF7B30F0066030B /* TransitionManager.swift in Sources */,
 				CAED03221ABED4A700022FE9 /* HomeButton.m in Sources */,
 				CAED035A1ABED5D400022FE9 /* CalculatorViewController.swift in Sources */,
@@ -590,6 +640,7 @@
 				CA81385A1AF7B30F0066030B /* AsyncImageView.swift in Sources */,
 				CAA070271AD15164000C8E70 /* FlexPenViewController.swift in Sources */,
 				CAED03241ABED4A700022FE9 /* MultilineLabel.m in Sources */,
+				CA2B1B871AF90D9D00020298 /* buttonMenu.swift in Sources */,
 				CA0F05D91AC459CE00BA3ABE /* MyNavigationController.swift in Sources */,
 				CA81386F1AF7B30F0066030B /* SpringLabel.swift in Sources */,
 				CAED034D1ABED57800022FE9 /* DoseView.swift in Sources */,
@@ -613,6 +664,7 @@
 				CA2B1B801AF8DB3200020298 /* HypoglycemieViewController.swift in Sources */,
 				CA8138751AF7B30F0066030B /* UnwindSegue.swift in Sources */,
 				CAED03261ABED4A700022FE9 /* MyPickerView.m in Sources */,
+				CA91436F1AFA5D92001AAA20 /* AgiterSubview.swift in Sources */,
 				CA81385E1AF7B30F0066030B /* DesignableImageView.swift in Sources */,
 				CAD59EEB1ACC06CE00B82A56 /* Slogan.swift in Sources */,
 				CAED02EE1ABED46F00022FE9 /* AppDelegate.swift in Sources */,
