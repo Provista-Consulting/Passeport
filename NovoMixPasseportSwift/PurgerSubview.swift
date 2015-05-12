@@ -1,16 +1,17 @@
 //
-//  AgiterSubview.swift
+//  PurgerSubview.swift
 //  NovoMixPasseportSwift
 //
-//  Created by Fethi El Hassasna on 5/6/15.
+//  Created by Fethi El Hassasna on 5/10/15.
 //  Copyright (c) 2015 Fethi El Hassasna. All rights reserved.
 //
 
 import UIKit
 
-class AgiterSubview: UIView {
+class PurgerSubview: UIView {
 
     @IBOutlet weak var playVideoContainer: UIView!
+    
     var buttonPlayVideo : buttonMenu!
     
     func load() {
@@ -22,7 +23,7 @@ class AgiterSubview: UIView {
         self.buttonPlayVideo.labelNumber.text = "▶︎"
         self.buttonPlayVideo.labelNumber.font = self.buttonPlayVideo.labelNumber.font.fontWithSize(18)
         self.buttonPlayVideo.labelTitle.text = "Jouer vidéo"
-        self.buttonPlayVideo.button.tag = 0
+        self.buttonPlayVideo.button.tag = 1
         self.buttonPlayVideo.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.playVideoContainer.addSubview(self.buttonPlayVideo)
     }
@@ -30,6 +31,8 @@ class AgiterSubview: UIView {
     @IBAction func click (sender: AnyObject!) {
         
         //println("Coucou")
-    
+        
     }
+
+
 }
