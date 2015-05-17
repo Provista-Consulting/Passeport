@@ -14,7 +14,8 @@ import UIKit
     @IBOutlet weak var buttonAdapteDose: TopButton!
     @IBOutlet weak var buttonNovoTwist: TopButton!
     @IBOutlet weak var buttonHypoglycemie: TopButton!
-    
+    @IBOutlet weak var buttonConseils: TopButton!
+    @IBOutlet weak var buttonNovoFine: TopButton!
     // Our custom view from the XIB file
     var view: UIView!
     
