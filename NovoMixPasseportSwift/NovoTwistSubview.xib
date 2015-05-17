@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9CP-kU-acI" customClass="TypeDaiguillesSubview" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="850" height="425"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="85J-Jc-5ew" customClass="ContainerView">
+                    <rect key="frame" x="67" y="19" width="320" height="282"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="aiguilles1" translatesAutoresizingMaskIntoConstraints="NO" id="rF1-BE-tvH">
+                            <rect key="frame" x="71" y="14" width="178" height="178"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3e-hp-ALM">
+                            <rect key="frame" x="20" y="186" width="280" height="82"/>
+                            <attributedString key="attributedText">
+                                <fragment content="NovoTwist ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content">
+8mm</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.55294117649999996" green="0.53333333329999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQh-rX-eR4">
+                    <rect key="frame" x="35" y="302" width="574" height="115"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">1. La technologie «thin Wall», paroi mince pour plus de confort.
+2. 2 longueurs pour s’adapter à la corpulence de chacun.
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="3. Boîtes de 100 aiguilles.">
+                            <attributes>
+                                <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="3"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aP2-vu-9LU" customClass="ContainerView">
+                    <rect key="frame" x="459" y="19" width="320" height="282"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="aiguilles2" translatesAutoresizingMaskIntoConstraints="NO" id="IUk-Dh-IwC">
+                            <rect key="frame" x="71" y="12" width="178" height="178"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASk-Sr-mKd">
+                            <rect key="frame" x="20" y="186" width="280" height="82"/>
+                            <attributedString key="attributedText">
+                                <fragment content="NovoTwist ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content">
+5mm</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.55294117649999996" green="0.53333333329999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="523" y="454.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="agC-8w-WYh" customClass="SiteDinjectionSubview" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="-1" width="850" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRq-jM-gv6">
+                    <rect key="frame" x="24" y="291" width="818" height="115"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+TGVzIGluamVjdGlvbnMgZOKAmWluc3VsaW5lIHBldXZlbnQgw6p0cmUgcHJhdGlxdcOpZXMgw6AgZGlm
+ZsOpcmVudHMgZW5kcm9pdHMgAyh2b2lyIHNjaMOpbWEgY2ktY29udHJlKSA6IGFiZG9tZW4sIGJyYXMs
+IGN1aXNzZXMgZXQgZmVzc2VzLgMgRGFucyBjaGFjdW5lIGRlIGNlcyB6b25lcywgbOKAmWFic29ycHRp
+b24gZOKAmWluc3VsaW5lIGVzdCB1biBwZXUgZGlmZsOpcmVudGUsIGF2ZWMgdW4gZMOpYnV0IGTigJlh
+Y3Rpb24gcGx1cyBtb2lucyByYXBpZGUgZXQgdW5lIGR1csOpZSBk4oCZYWN0aW9uIHBsdXMgb3UgbW9p
+bnMgbG9uZ3VlLg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmi-ER-DmL" customClass="ContainerView">
+                    <rect key="frame" x="35" y="43" width="781" height="233"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="sitedinjection1" translatesAutoresizingMaskIntoConstraints="NO" id="plq-aI-ltn">
+                            <rect key="frame" x="19" y="18" width="195" height="195"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="sitedinjection2" translatesAutoresizingMaskIntoConstraints="NO" id="9z2-rW-Gur">
+                            <rect key="frame" x="230" y="18" width="195" height="195"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obx-m6-xd4" customClass="ContainerView">
+                            <rect key="frame" x="442" y="18" width="320" height="195"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXd-Rb-8Eb">
+                                    <rect key="frame" x="14" y="-17" width="298" height="204"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Rapidité d'absorption de l’insuline :">
+                                            <attributes>
+                                                <color key="NSColor" red="0.10980392156862745" green="0.41568627450980394" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+Abdomen = </string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Rapide">
+                                            <attributes>
+                                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+Bras = </string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Moyen">
+                                            <attributes>
+                                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+Cuisses et haut des fesses = </string>
+                                            <attributes>
+                                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Lente">
+                                            <attributes>
+                                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="HelveticaNeue-BoldItalic"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.55294117649999996" green="0.53333333329999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.55294117649999996" green="0.53333333329999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="523" y="972"/>
+        </view>
+        <view contentMode="scaleToFill" id="INV-fC-ay3" customClass="TechniqueSubview" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="850" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Bo-Kh-S86">
+                    <rect key="frame" x="631" y="219" width="201" height="196"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="technique2" translatesAutoresizingMaskIntoConstraints="NO" id="JgZ-5x-RkV">
+                            <rect key="frame" x="25" y="8" width="152" height="152"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-li-WcL">
+                            <rect key="frame" x="35" y="162" width="132" height="28"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="0.1911550909280777" green="0.6378670334815979" blue="0.26147949695587158" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-ek-bVX">
+                    <rect key="frame" x="631" y="12" width="201" height="196"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="technique1" translatesAutoresizingMaskIntoConstraints="NO" id="Uuv-CD-3JH">
+                            <rect key="frame" x="25" y="8" width="152" height="152"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mauvais" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNB-pQ-hkz">
+                            <rect key="frame" x="35" y="160" width="132" height="28"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="0.67455112934112549" green="0.15692374110221863" blue="0.10914970934391022" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-VQ-r8J" customClass="ContainerView">
+                    <rect key="frame" x="52" y="74" width="252" height="278"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="technique4" translatesAutoresizingMaskIntoConstraints="NO" id="x6u-Q0-kqA">
+                            <rect key="frame" x="42" y="13" width="172" height="172"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7B-ao-xPK">
+                            <rect key="frame" x="32" y="180" width="188" height="90"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Adulte poids normal ou obèse ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.55294117649999996" green="0.53333333329999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4R-dr-unj" customClass="ContainerView">
+                    <rect key="frame" x="343" y="74" width="252" height="278"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMF-Hi-ycn">
+                            <rect key="frame" x="25" y="178" width="207" height="92"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">Adulte maigre 
+
+</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="Angle d’insertion de 45°">
+                                    <attributes>
+                                        <color key="NSColor" red="0.17257410287857056" green="0.21834245324134827" blue="0.44677489995956421" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="technique3" translatesAutoresizingMaskIntoConstraints="NO" id="yAA-My-XiP">
+                            <rect key="frame" x="42" y="13" width="172" height="172"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.55294117649999996" green="0.53333333329999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="523" y="1486"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aiguilles1" width="178" height="178"/>
+        <image name="aiguilles2" width="178" height="178"/>
+        <image name="sitedinjection1" width="195" height="195"/>
+        <image name="sitedinjection2" width="195" height="195"/>
+        <image name="technique1" width="195" height="195"/>
+        <image name="technique2" width="195" height="195"/>
+        <image name="technique3" width="195" height="195"/>
+        <image name="technique4" width="195" height="195"/>
+    </resources>
+</document>
