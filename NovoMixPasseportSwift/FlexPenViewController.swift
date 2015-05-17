@@ -178,7 +178,6 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
             moviePlayer = nil
         }
         
-        println("fethi")
     }
     
     func createNavigationStyle () {
