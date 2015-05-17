@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         self.sommaireView.buttonAdapteDose.addTarget(self, action: "showAdapteDoseVC:", forControlEvents: UIControlEvents.TouchUpInside)
         self.sommaireView.buttonHypoglycemie.addTarget(self, action: "showHypoglycemieVC:", forControlEvents: UIControlEvents.TouchUpInside)
         self.sommaireView.buttonNovoTwist.addTarget(self, action: "showNovoTwistVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.sommaireView.buttonNovoFine.addTarget(self, action: "showNovoFineVC:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.sommaireView.buttonConseils.addTarget(self, action: "showConseilsVC:", forControlEvents: UIControlEvents.TouchUpInside)
         
     }
 
@@ -80,6 +82,21 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : NovoTwistViewController = storyboard.instantiateViewControllerWithIdentifier("NovoTwistVC") as! NovoTwistViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func showNovoFineVC (sender: AnyObject!) {
+        
+        let vc = NovoFineViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func showConseilsVC (sender: AnyObject!) {
+        
+        var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc : ConseilsViewController = storyboard.instantiateViewControllerWithIdentifier("ConseilsVC") as! ConseilsViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
