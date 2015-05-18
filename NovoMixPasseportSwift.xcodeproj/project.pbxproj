@@ -57,6 +57,10 @@
 		CA9734231B04E847004C3BA8 /* ArrowButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9734221B04E847004C3BA8 /* ArrowButton.xib */; };
 		CA9734261B04F5CC004C3BA8 /* HypoDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9734251B04F5CB004C3BA8 /* HypoDialogView.swift */; };
 		CAA070271AD15164000C8E70 /* FlexPenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA070261AD15164000C8E70 /* FlexPenViewController.swift */; };
+		CAC4920C1B08ACBB00B28CCD /* HypoDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4920B1B08ACBB00B28CCD /* HypoDialogView.xib */; };
+		CAC4920E1B08CFB600B28CCD /* HypoDialogViewSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */; };
+		CAC492111B09F5ED00B28CCD /* ConseilsSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */; };
+		CAC492131B09F61300B28CCD /* ConseilsSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC492121B09F61300B28CCD /* ConseilsSubviews.swift */; };
 		CACB3E451AFB85AA00FEC309 /* agiter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E411AFB85AA00FEC309 /* agiter.mp4 */; };
 		CACB3E461AFB85AA00FEC309 /* injecter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E421AFB85AA00FEC309 /* injecter.mp4 */; };
 		CACB3E471AFB85AA00FEC309 /* purger.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E431AFB85AA00FEC309 /* purger.mp4 */; };
@@ -172,6 +176,10 @@
 		CA9734221B04E847004C3BA8 /* ArrowButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowButton.xib; sourceTree = "<group>"; };
 		CA9734251B04F5CB004C3BA8 /* HypoDialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogView.swift; sourceTree = "<group>"; };
 		CAA070261AD15164000C8E70 /* FlexPenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexPenViewController.swift; sourceTree = "<group>"; };
+		CAC4920B1B08ACBB00B28CCD /* HypoDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypoDialogView.xib; sourceTree = "<group>"; };
+		CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypoDialogViewSubviews.xib; sourceTree = "<group>"; };
+		CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConseilsSubviews.xib; sourceTree = "<group>"; };
+		CAC492121B09F61300B28CCD /* ConseilsSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConseilsSubviews.swift; sourceTree = "<group>"; };
 		CACB3E411AFB85AA00FEC309 /* agiter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = agiter.mp4; sourceTree = "<group>"; };
 		CACB3E421AFB85AA00FEC309 /* injecter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = injecter.mp4; sourceTree = "<group>"; };
 		CACB3E431AFB85AA00FEC309 /* purger.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purger.mp4; sourceTree = "<group>"; };
@@ -341,8 +349,19 @@
 			isa = PBXGroup;
 			children = (
 				CA9734251B04F5CB004C3BA8 /* HypoDialogView.swift */,
+				CAC4920B1B08ACBB00B28CCD /* HypoDialogView.xib */,
+				CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */,
 			);
 			name = Hypoglycemie;
+			sourceTree = "<group>";
+		};
+		CAC4920F1B09F5BF00B28CCD /* ConseilsSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				CAC492121B09F61300B28CCD /* ConseilsSubviews.swift */,
+				CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */,
+			);
+			name = ConseilsSubviews;
 			sourceTree = "<group>";
 		};
 		CACB3E401AFB857300FEC309 /* Files */ = {
@@ -539,6 +558,7 @@
 		CAED033E1ABED52C00022FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CAC4920F1B09F5BF00B28CCD /* ConseilsSubviews */,
 				CA9734241B04F593004C3BA8 /* Hypoglycemie */,
 				CAE1755F1B021BB8008AA929 /* NovoTwist */,
 				CA91436D1AFA5D56001AAA20 /* FlexPen */,
@@ -630,17 +650,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC4920E1B08CFB600B28CCD /* HypoDialogViewSubviews.xib in Resources */,
 				CACB3E451AFB85AA00FEC309 /* agiter.mp4 in Resources */,
 				CAED03521ABED57800022FE9 /* ResultView.xib in Resources */,
 				CACB3E471AFB85AA00FEC309 /* purger.mp4 in Resources */,
 				CAD59EE41ACBFF8B00B82A56 /* SommaireView.xib in Resources */,
 				CAED03421ABED56300022FE9 /* uc.jpg in Resources */,
 				CA9143711AFA5E9C001AAA20 /* FlexPenSubviews.xib in Resources */,
+				CAC4920C1B08ACBB00B28CCD /* HypoDialogView.xib in Resources */,
 				CAED034E1ABED57800022FE9 /* DoseView.xib in Resources */,
 				CAED034C1ABED57800022FE9 /* ObjectifView.xib in Resources */,
 				CAED03401ABED54D00022FE9 /* Images.xcassets in Resources */,
 				CAED02F81ABED46F00022FE9 /* LaunchScreen.xib in Resources */,
 				CACB3E461AFB85AA00FEC309 /* injecter.mp4 in Resources */,
+				CAC492111B09F5ED00B28CCD /* ConseilsSubviews.xib in Resources */,
 				CAD59EED1ACC071E00B82A56 /* Slogan.xib in Resources */,
 				CA9734231B04E847004C3BA8 /* ArrowButton.xib in Resources */,
 				CAED03541ABED5B600022FE9 /* Main.storyboard in Resources */,
@@ -739,6 +762,7 @@
 				CA9734211B04E820004C3BA8 /* ArrowButton.swift in Sources */,
 				CAED03511ABED57800022FE9 /* ResultView.swift in Sources */,
 				CAED033C1ABED52300022FE9 /* Thumbnail.swift in Sources */,
+				CAC492131B09F61300B28CCD /* ConseilsSubviews.swift in Sources */,
 				CA0F05D61AC4490A00BA3ABE /* NSString+Morphing.m in Sources */,
 				CA81386D1AF7B30F0066030B /* SpringButton.swift in Sources */,
 				CADEC28F1AC84CF400C046E1 /* Constants.swift in Sources */,
