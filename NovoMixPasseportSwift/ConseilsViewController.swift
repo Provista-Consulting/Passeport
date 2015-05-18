@@ -10,7 +10,9 @@ import UIKit
 
 class ConseilsViewController: UIViewController {
     
+    @IBOutlet weak var viewContainer: UIView!
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 44))
+    var french = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,18 @@ class ConseilsViewController: UIViewController {
         createNavigationStyle()
 
         // Do any additional setup after loading the view.
+        
+        var subView : ConseilsSubviews!
+        
+        if french {
+            subView = NSBundle.mainBundle().loadNibNamed("ConseilsSubviews", owner: self, options: nil)[0] as! ConseilsSubviews
+        } else {
+            subView = NSBundle.mainBundle().loadNibNamed("ConseilsSubviews", owner: self, options: nil)[1] as! ConseilsSubviews
+        }
+        
+        subView.load()
+        self.viewContainer.addSubview(subView)
+        
     }
 
     override func didReceiveMemoryWarning() {
