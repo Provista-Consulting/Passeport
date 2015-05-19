@@ -61,6 +61,8 @@
 		CAC4920E1B08CFB600B28CCD /* HypoDialogViewSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */; };
 		CAC492111B09F5ED00B28CCD /* ConseilsSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */; };
 		CAC492131B09F61300B28CCD /* ConseilsSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC492121B09F61300B28CCD /* ConseilsSubviews.swift */; };
+		CAC492151B09FE3A00B28CCD /* AdapteDoseSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC492141B09FE3A00B28CCD /* AdapteDoseSubviews.swift */; };
+		CAC492181B09FEA400B28CCD /* AdapteDoseSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC492171B09FEA400B28CCD /* AdapteDoseSubviews.xib */; };
 		CACB3E451AFB85AA00FEC309 /* agiter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E411AFB85AA00FEC309 /* agiter.mp4 */; };
 		CACB3E461AFB85AA00FEC309 /* injecter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E421AFB85AA00FEC309 /* injecter.mp4 */; };
 		CACB3E471AFB85AA00FEC309 /* purger.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CACB3E431AFB85AA00FEC309 /* purger.mp4 */; };
@@ -180,6 +182,8 @@
 		CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypoDialogViewSubviews.xib; sourceTree = "<group>"; };
 		CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConseilsSubviews.xib; sourceTree = "<group>"; };
 		CAC492121B09F61300B28CCD /* ConseilsSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConseilsSubviews.swift; sourceTree = "<group>"; };
+		CAC492141B09FE3A00B28CCD /* AdapteDoseSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapteDoseSubviews.swift; sourceTree = "<group>"; };
+		CAC492171B09FEA400B28CCD /* AdapteDoseSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdapteDoseSubviews.xib; sourceTree = "<group>"; };
 		CACB3E411AFB85AA00FEC309 /* agiter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = agiter.mp4; sourceTree = "<group>"; };
 		CACB3E421AFB85AA00FEC309 /* injecter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = injecter.mp4; sourceTree = "<group>"; };
 		CACB3E431AFB85AA00FEC309 /* purger.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purger.mp4; sourceTree = "<group>"; };
@@ -362,6 +366,15 @@
 				CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */,
 			);
 			name = ConseilsSubviews;
+			sourceTree = "<group>";
+		};
+		CAC492161B09FE4A00B28CCD /* AdapteDose */ = {
+			isa = PBXGroup;
+			children = (
+				CAC492141B09FE3A00B28CCD /* AdapteDoseSubviews.swift */,
+				CAC492171B09FEA400B28CCD /* AdapteDoseSubviews.xib */,
+			);
+			name = AdapteDose;
 			sourceTree = "<group>";
 		};
 		CACB3E401AFB857300FEC309 /* Files */ = {
@@ -558,6 +571,7 @@
 		CAED033E1ABED52C00022FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CAC492161B09FE4A00B28CCD /* AdapteDose */,
 				CAC4920F1B09F5BF00B28CCD /* ConseilsSubviews */,
 				CA9734241B04F593004C3BA8 /* Hypoglycemie */,
 				CAE1755F1B021BB8008AA929 /* NovoTwist */,
@@ -650,6 +664,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC492181B09FEA400B28CCD /* AdapteDoseSubviews.xib in Resources */,
 				CAC4920E1B08CFB600B28CCD /* HypoDialogViewSubviews.xib in Resources */,
 				CACB3E451AFB85AA00FEC309 /* agiter.mp4 in Resources */,
 				CAED03521ABED57800022FE9 /* ResultView.xib in Resources */,
@@ -763,6 +778,7 @@
 				CAED03511ABED57800022FE9 /* ResultView.swift in Sources */,
 				CAED033C1ABED52300022FE9 /* Thumbnail.swift in Sources */,
 				CAC492131B09F61300B28CCD /* ConseilsSubviews.swift in Sources */,
+				CAC492151B09FE3A00B28CCD /* AdapteDoseSubviews.swift in Sources */,
 				CA0F05D61AC4490A00BA3ABE /* NSString+Morphing.m in Sources */,
 				CA81386D1AF7B30F0066030B /* SpringButton.swift in Sources */,
 				CADEC28F1AC84CF400C046E1 /* Constants.swift in Sources */,
