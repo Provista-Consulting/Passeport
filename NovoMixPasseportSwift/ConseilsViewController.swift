@@ -46,7 +46,13 @@ class ConseilsViewController: UIViewController {
         self.titleLabel.textColor = UIColor.blackColor()
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
-        self.titleLabel.text = "Quelques conseils pour éviter les hypoglycémies"
+        
+        if french {
+            self.titleLabel.text = "Quelques conseils pour éviter les hypoglycémies"
+        } else {
+            self.titleLabel.text = " بعض النصائح لتفادي نقص كمية السكر في الدم"
+        }
+        
         self.navigationItem.titleView = self.titleLabel
         
         // Customize navigation bar

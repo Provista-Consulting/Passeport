@@ -12,9 +12,12 @@ class HypoglycemieViewController: UIViewController {
 
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 44))
     
-    let titles : [String] = ["Causes\nd’hypoglycémie".uppercaseString, "SYMPTÔMES DÉCELABLES\nPAR VOTRE ENTOURAGE", "SYMPTÔMES\nD’UNE HYPOGLYCÉMIE", "Que faire en cas\nd’hypoglycémie ".uppercaseString]
+    var french = true
+    var arIndex = 0
     
-    let titlesBig : [String] = ["Causes d’hypoglycémie".uppercaseString, "SYMPTÔMES DÉCELABLES PAR VOTRE ENTOURAGE", "SYMPTÔMES D’UNE HYPOGLYCÉMIE", "Que faire en cas d’hypoglycémie ".uppercaseString]
+    let titles : [String] = ["Causes\nd’hypoglycémie".uppercaseString, "SYMPTÔMES DÉCELABLES\nPAR VOTRE ENTOURAGE", "SYMPTÔMES\nD’UNE HYPOGLYCÉMIE", "Que faire en cas\nd’hypoglycémie ".uppercaseString, " أسباب  نقص السكر في الدم", "أعراض تلاحظ من قبل أقاربك", "أعراض نقص كمية السكر في الدم ", "ما يجب القيام به في حالة\nنقص السكر في الدم "]
+    
+    let titlesBig : [String] = ["Causes d’hypoglycémie".uppercaseString, "SYMPTÔMES DÉCELABLES PAR VOTRE ENTOURAGE", "SYMPTÔMES D’UNE HYPOGLYCÉMIE", "Que faire en cas d’hypoglycémie ".uppercaseString,  " أسباب  نقص السكر في الدم", "أعراض تلاحظ من قبل أقاربك", "أعراض نقص كمية السكر في الدم ", "ما يجب القيام به في حالة\nنقص السكر في الدم "]
     
     @IBOutlet weak var causesArrowButton: UIView!
     @IBOutlet weak var symptomesArrowButton: UIView!
@@ -37,31 +40,32 @@ class HypoglycemieViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.arIndex = french ? 0 : 4
         
         // Causes button
         self.causesButton = NSBundle.mainBundle().loadNibNamed("ArrowButton", owner: self, options: nil)[0] as! ArrowButton
-        self.causesButton.labelTitle.text = titles[0]
+        self.causesButton.labelTitle.text = titles[0 + arIndex]
         self.causesButton.button.tag = 0
         self.causesButton.button.addTarget(self, action: "showDialog:", forControlEvents: UIControlEvents.TouchUpInside)
         self.causesArrowButton.addSubview(self.causesButton)
         
         // symptomes button
         self.symptomesButton = NSBundle.mainBundle().loadNibNamed("ArrowButton", owner: self, options: nil)[0] as! ArrowButton
-        self.symptomesButton.labelTitle.text = titles[1]
+        self.symptomesButton.labelTitle.text = titles[1 + arIndex]
         self.symptomesButton.button.tag = 1
         self.symptomesButton.button.addTarget(self, action: "showDialog:", forControlEvents: UIControlEvents.TouchUpInside)
         self.symptomesArrowButton.addSubview(self.symptomesButton)
         
         // symptomes2 button
         self.symptomes2Button = NSBundle.mainBundle().loadNibNamed("ArrowButton", owner: self, options: nil)[0] as! ArrowButton
-        self.symptomes2Button.labelTitle.text = titles[2]
+        self.symptomes2Button.labelTitle.text = titles[2 + arIndex]
         self.symptomes2Button.button.tag = 2
         self.symptomes2Button.button.addTarget(self, action: "showDialog:", forControlEvents: UIControlEvents.TouchUpInside)
         self.symptomes2ArrowButton.addSubview(self.symptomes2Button)
         
         // QueFaireButton
         self.QueFaireButton = NSBundle.mainBundle().loadNibNamed("ArrowButton", owner: self, options: nil)[0] as! ArrowButton
-        self.QueFaireButton.labelTitle.text = titles[3]
+        self.QueFaireButton.labelTitle.text = titles[3 + arIndex]
         self.QueFaireButton.button.tag = 3
         self.QueFaireButton.button.addTarget(self, action: "showDialog:", forControlEvents: UIControlEvents.TouchUpInside)
         self.QueFaireArrowButton.addSubview(self.QueFaireButton)
@@ -97,9 +101,7 @@ class HypoglycemieViewController: UIViewController {
     }
     
     func showDialog (sender: AnyObject) {
-        
-        
-        
+                
         println(sender.tag)
         
         for subview in self.dialogView.scrollView.subviews {
@@ -107,26 +109,28 @@ class HypoglycemieViewController: UIViewController {
             subview.removeFromSuperview()
         }
         
-        self.dialogView.titleLabel.text = titlesBig[sender.tag]
+        self.dialogView.titleLabel.text = titlesBig[sender.tag + arIndex]
         self.dialogView.scrollView.contentSize = CGSize(width: 563.0, height: 340.0)
+        
+        let arIndex2 = french ? 0 : 5
         
         switch sender.tag {
         case 0 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[0] as! UIView
+            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[0 + arIndex2] as! UIView
             self.dialogView.scrollView.addSubview(view1)
             break
         case 1 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[1] as! UIView
+            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[1 + arIndex2] as! UIView
             self.dialogView.scrollView.addSubview(view1)
             break
         case 2 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[2] as! UIView
+            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[2 + arIndex2] as! UIView
             self.dialogView.scrollView.addSubview(view1)
             
             break
         case 3 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[3] as! UIView
-            var view2 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[4] as! UIView
+            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[3 + arIndex2] as! UIView
+            var view2 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[4 + arIndex2] as! UIView
             view2.frame.origin.y = 340.0
             
             self.dialogView.scrollView.addSubview(view1)
@@ -164,7 +168,7 @@ class HypoglycemieViewController: UIViewController {
         self.titleLabel.textColor = UIColor.blackColor()
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
-        self.titleLabel.text = "Hypoglycémie : causes & signes"
+        self.titleLabel.text = french ? "Hypoglycémie : causes & signes" : "أسباب وأعراض نقص السكر في الدم"
         self.navigationItem.titleView = self.titleLabel
         
         // Customize navigation bar

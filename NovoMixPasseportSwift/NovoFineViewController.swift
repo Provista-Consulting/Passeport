@@ -15,6 +15,8 @@ class NovoFineViewController: UIViewController {
     
     var moviePlayer : MPMoviePlayerController?
     
+    var french = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -59,7 +61,7 @@ class NovoFineViewController: UIViewController {
         self.titleLabel.textColor = UIColor.blackColor()
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
-        self.titleLabel.text = "Guide d’utilisation du NovoFine®"
+        self.titleLabel.text = french ? "Guide d’utilisation du NovoPen®" : "دليل استخدام نوفوبين"
         self.navigationItem.titleView = self.titleLabel
         
         // Customize navigation bar

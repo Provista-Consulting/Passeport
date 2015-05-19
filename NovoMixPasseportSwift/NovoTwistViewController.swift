@@ -20,6 +20,8 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
     
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 44))
     
+    var french = true
+    
     // Scroll View
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -40,7 +42,7 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
         self.buttonAgiter = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonAgiter.active = true
         self.buttonAgiter.labelNumber.text = "1"
-        self.buttonAgiter.labelTitle.text = "Type d’aiguilles"
+        self.buttonAgiter.labelTitle.text = french ? "Type d’aiguilles" : " أنواع الإبر"
         self.buttonAgiter.button.tag = 0
         self.buttonAgiter.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonAgiter.addSubview(self.buttonAgiter)
@@ -48,7 +50,7 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
         self.buttonPurger = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonPurger.active = false
         self.buttonPurger.labelNumber.text = "2"
-        self.buttonPurger.labelTitle.text = "Sites d’injection"
+        self.buttonPurger.labelTitle.text = french ? "Sites d’injection" : "مواضع حقن الأنسولين"
         self.buttonPurger.button.tag = 1
         self.buttonPurger.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonPurger.addSubview(self.buttonPurger)
@@ -56,15 +58,16 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
         self.buttonSelectionner = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonSelectionner.active = false
         self.buttonSelectionner.labelNumber.text = "3"
-        self.buttonSelectionner.labelTitle.text = "Technique"
+        self.buttonSelectionner.labelTitle.text = french ? "Technique" : "تقنية الحقن"
         self.buttonSelectionner.button.tag = 2
         self.buttonSelectionner.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonSelectionner.addSubview(self.buttonSelectionner)
 
         
+        let arIndex = french ? 0 : 3
         // type d'aiguilles Subview
         
-        self.typeDaiguillesSubview = NSBundle.mainBundle().loadNibNamed("NovoTwistSubview", owner: self, options: nil)[0] as! TypeDaiguillesSubview
+        self.typeDaiguillesSubview = NSBundle.mainBundle().loadNibNamed("NovoTwistSubview", owner: self, options: nil)[0 + arIndex] as! TypeDaiguillesSubview
         //self.typeDaiguillesSubview.load()
         //self.typeDaiguillesSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -72,7 +75,7 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
         
         // site d'injection Subview
         
-        self.siteDinjectionSubview = NSBundle.mainBundle().loadNibNamed("NovoTwistSubview", owner: self, options: nil)[1] as! SiteDinjectionSubview
+        self.siteDinjectionSubview = NSBundle.mainBundle().loadNibNamed("NovoTwistSubview", owner: self, options: nil)[1 + arIndex] as! SiteDinjectionSubview
         //self.purgerSubview.load()
         //self.purgerSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -82,7 +85,7 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
         
         // Selectionner subview
         
-        self.techniqueSubview = NSBundle.mainBundle().loadNibNamed("NovoTwistSubview", owner: self, options: nil)[2] as! TechniqueSubview
+        self.techniqueSubview = NSBundle.mainBundle().loadNibNamed("NovoTwistSubview", owner: self, options: nil)[2 + arIndex] as! TechniqueSubview
 //        self.techniqueSubview.load()
 //        self.techniqueSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -155,7 +158,7 @@ class NovoTwistViewController: UIViewController, UIScrollViewDelegate {
         self.titleLabel.textColor = UIColor.blackColor()
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
-        self.titleLabel.text = "NovoTwist Aiguilles Novo Nordisk"
+        self.titleLabel.text = french ? "NovoTwist Aiguilles Novo Nordisk" : "نوفوتويست إبر نوفو نوردسك"
         self.navigationItem.titleView = self.titleLabel
         
         // Customize navigation bar

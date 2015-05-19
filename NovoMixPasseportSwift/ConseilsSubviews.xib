@@ -114,5 +114,1480 @@
                 <outlet property="label5" destination="EB3-NZ-9gA" id="Z3q-UH-Zah"/>
             </connections>
         </view>
+        <view contentMode="scaleToFill" id="1YO-Oo-HFt" customClass="ConseilsSubviews" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="862" height="517"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5W-db-u9k" customClass="SpringLabel" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="26" y="16" width="815" height="78"/>
+                    <attributedString key="attributedText">
+                        <fragment content="• ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="مراقبة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="نسبة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السكر">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="في">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الدم">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="  ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بشكل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="دوري">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" (">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="و">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أيضا">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="قبل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="النوم">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="و">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="إذا">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="كانت">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="النسبة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" &lt; 1,4 ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="غ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="/">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="ل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+AyAgIA
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الرجاء">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أخذ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="وجبة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="طعام">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="خفيفة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="من">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أجل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="تفادي">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="نقص">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="نسبة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السكر">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أثناء">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="النوم">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=".">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3U-ch-0we" customClass="SpringLabel" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="26" y="102" width="815" height="78"/>
+                    <attributedString key="attributedText">
+                        <fragment content="• ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="إتباع">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="نظام">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="غذائي">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="متوازن">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="طوال">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="فترة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="النهار">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" (3 ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="وجبات">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="رئيسية">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="و">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="وجبتين">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="خفيفتين">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=").">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLB-Zx-hdF" customClass="SpringLabel" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="26" y="176" width="815" height="78"/>
+                    <attributedString key="attributedText">
+                        <fragment content="• ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="حمل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السكر">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="دائما">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أو">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="وضعه">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="في">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="متناول">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="اليد">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بكمية">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="كافية">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="من">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أجل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="تناول">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="كمية">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السكر">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="مرتين">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=".">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ2-OU-SOq" customClass="SpringLabel" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="26" y="262" width="815" height="37"/>
+                    <attributedString key="attributedText">
+                        <fragment content="• ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="تجنب">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السياقة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=".">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                <array key="NSWritingDirection">
+                                    <integer value="0"/>
+                                </array>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oB1-Ql-Qt9" customClass="SpringLabel" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="26" y="314" width="815" height="78"/>
+                    <attributedString key="attributedText">
+                        <fragment content="• ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="إحترام">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="تناول">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الأدوية">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="المضادة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="للسكري">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="عن">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="طريق">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الفم">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="في">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الوقت">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="المناسب">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بالنسبة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="للوجبات">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="للأشخاص">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="المصابين">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بداء">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السكري">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="من">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="النوع">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الثاني">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=".">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                <array key="NSWritingDirection">
+                                    <integer value="0"/>
+                                </array>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-oh-F1n" customClass="SpringLabel" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="14" y="400" width="827" height="78"/>
+                    <attributedString key="attributedText">
+                        <fragment content="• ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الرجاء">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أخذ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بطاقة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="داء">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="السكري">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أينما">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="كنتم">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" (">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="من">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أجل">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="مساعدتكم">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="أو">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الإتصال">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بالنجدة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="في">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+AyAgA
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="حالة">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="الشعور">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="بالضيق">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="GeezaPro-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=").">
+                            <attributes>
+                                <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEa-i9-aCH">
+                    <rect key="frame" x="0.0" y="0.0" width="862" height="517"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="click:" destination="1YO-Oo-HFt" eventType="touchUpInside" id="FjS-g6-bx0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label0" destination="G5W-db-u9k" id="CC3-oK-tnx"/>
+                <outlet property="label1" destination="b3U-ch-0we" id="WAl-f7-BTn"/>
+                <outlet property="label2" destination="LLB-Zx-hdF" id="FJ5-0M-kSU"/>
+                <outlet property="label3" destination="wZ2-OU-SOq" id="keM-XC-9re"/>
+                <outlet property="label4" destination="oB1-Ql-Qt9" id="Ggh-Nl-5Zu"/>
+                <outlet property="label5" destination="EK3-oh-F1n" id="rUY-Ok-KlA"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="1003.5"/>
+        </view>
     </objects>
 </document>

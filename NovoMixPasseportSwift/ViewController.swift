@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var french = true
+    @IBOutlet weak var languageButton: UIButton!
+    
+    @IBOutlet weak var label1French: UILabel!
+    @IBOutlet weak var label2French: UILabel!
+    
+    @IBOutlet weak var label1Arabic: UILabel!
+    @IBOutlet weak var label2Arabic: UILabel!
+    
+    
     var sommaireView = SommaireView(frame: CGRect(x: 0, y: 0, width: 1024, height: 768))
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 44))
 
@@ -27,6 +37,10 @@ class ViewController: UIViewController {
         createNavigationStyle ()
         self.createViews()
         
+        // Hide arabic stuff
+        self.label1Arabic.hidden = true
+        self.label2Arabic.hidden = true
+        
         /* Buttons container */
         
         self.buttonsContainer.transform = CGAffineTransformMakeTranslation(215.0, 0.0)
@@ -41,6 +55,7 @@ class ViewController: UIViewController {
         self.sommaireView.buttonNovoFine.addTarget(self, action: "showNovoFineVC:", forControlEvents: UIControlEvents.TouchUpInside)
         self.sommaireView.buttonConseils.addTarget(self, action: "showConseilsVC:", forControlEvents: UIControlEvents.TouchUpInside)
         
+        self.sommaireView.french = self.french
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +70,7 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : FlexPenViewController = storyboard.instantiateViewControllerWithIdentifier("FlexPenVC") as! FlexPenViewController
-        
+        vc.french = self.french
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -64,7 +79,7 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : AdapteDoseViewController = storyboard.instantiateViewControllerWithIdentifier("AdapteDoseVC") as! AdapteDoseViewController
-        
+        vc.french = self.french
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -73,7 +88,7 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : HypoglycemieViewController = storyboard.instantiateViewControllerWithIdentifier("HypoglycemieVC") as! HypoglycemieViewController
-        
+        vc.french = self.french
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -82,13 +97,14 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : NovoTwistViewController = storyboard.instantiateViewControllerWithIdentifier("NovoTwistVC") as! NovoTwistViewController
-        
+        vc.french = self.french
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func showNovoFineVC (sender: AnyObject!) {
         
         let vc = NovoFineViewController()
+        vc.french = self.french
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -97,7 +113,7 @@ class ViewController: UIViewController {
         var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc : ConseilsViewController = storyboard.instantiateViewControllerWithIdentifier("ConseilsVC") as! ConseilsViewController
-        
+        vc.french = self.french
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
@@ -169,8 +185,6 @@ class ViewController: UIViewController {
         self.titleLabel.text = "Mon passeport"
         self.navigationItem.titleView = self.titleLabel
         
-        
-        
         // Customize navigation bar
         self.navigationController?.navigationBar.translucent = true
         
@@ -183,5 +197,37 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func changeLanguage(sender: AnyObject) {
+        
+        if self.french {
+            
+            // Show arabic views
+            
+            self.label1Arabic.hidden = false
+            self.label2Arabic.hidden = false
+            
+            self.label1French.hidden = true
+            self.label2French.hidden = true
+            
+            self.french = false
+            self.languageButton.setTitle("Version française", forState: UIControlState.Normal)
+            
+        } else {
+            
+            // Show french views
+            
+            self.label1Arabic.hidden = true
+            self.label2Arabic.hidden = true
+            
+            self.label1French.hidden = false
+            self.label2French.hidden = false
+            
+            self.french = true
+            self.languageButton.setTitle("Version arabe", forState: UIControlState.Normal)
+        }
+        
+        self.sommaireView.french = self.french
+        
+    }
 }
 

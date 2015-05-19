@@ -24,6 +24,10 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
     
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 44))
     
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var rightLabel: UILabel!
+    
+    var french = true
     // Scroll View
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -47,10 +51,15 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         self.createNavigationStyle()
         self.scrollView.delegate = self
         
+        if !french {
+            self.leftLabel.text = "قبل كل حقنة"
+            self.rightLabel.text = "حقن الأنسولين"
+        }
+        
         self.buttonAgiter = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonAgiter.active = true
         self.buttonAgiter.labelNumber.text = "1"
-        self.buttonAgiter.labelTitle.text = "Agiter"
+        self.buttonAgiter.labelTitle.text = french ? "Agiter" : "رج القنينة"
         self.buttonAgiter.button.tag = 0
         self.buttonAgiter.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonAgiter.addSubview(self.buttonAgiter)
@@ -58,7 +67,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         self.buttonPurger = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonPurger.active = false
         self.buttonPurger.labelNumber.text = "2"
-        self.buttonPurger.labelTitle.text = "Purger"
+        self.buttonPurger.labelTitle.text = french ? "Purger" : "تنظيف القنينة"
         self.buttonPurger.button.tag = 1
         self.buttonPurger.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonPurger.addSubview(self.buttonPurger)
@@ -66,7 +75,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         self.buttonSelectionner = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonSelectionner.active = false
         self.buttonSelectionner.labelNumber.text = "3"
-        self.buttonSelectionner.labelTitle.text = "Sélectionner"
+        self.buttonSelectionner.labelTitle.text = french ? "Sélectionner" : "الإختيار"
         self.buttonSelectionner.button.tag = 2
         self.buttonSelectionner.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonSelectionner.addSubview(self.buttonSelectionner)
@@ -74,14 +83,16 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         self.buttonInjecter = NSBundle.mainBundle().loadNibNamed("buttonMenu", owner: self, options: nil)[0] as! buttonMenu
         self.buttonInjecter.active = false
         self.buttonInjecter.labelNumber.text = "4"
-        self.buttonInjecter.labelTitle.text = "Injecter"
+        self.buttonInjecter.labelTitle.text = french ? "Injecter" : "الحقن"
         self.buttonInjecter.button.tag = 3
         self.buttonInjecter.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.viewButtonInjecter.addSubview(self.buttonInjecter)
         
+        
+        let arIndex = french ? 0 : 4
         // Agiter subview
         
-        self.agiterSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[0] as! AgiterSubview
+        self.agiterSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[0 + arIndex] as! AgiterSubview
         self.agiterSubview.load()
         self.agiterSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -89,7 +100,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         
         // Purger subview
         
-        self.purgerSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[1] as! PurgerSubview
+        self.purgerSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[1 + arIndex] as! PurgerSubview
         self.purgerSubview.load()
         self.purgerSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -99,7 +110,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         
         // Selectionner subview
         
-        self.selectionnerSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[2] as! SelectionnerSubview
+        self.selectionnerSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[2 + arIndex] as! SelectionnerSubview
         self.selectionnerSubview.load()
         self.selectionnerSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -109,7 +120,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         
         // Injecter subview
         
-        self.injecterSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[3] as! InjecterSubview
+        self.injecterSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[3 + arIndex] as! InjecterSubview
         self.injecterSubview.load()
         self.injecterSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -187,7 +198,14 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         self.titleLabel.textColor = UIColor.blackColor()
         self.titleLabel.textAlignment = .Center
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
-        self.titleLabel.text = "Guide d’utilisation du FlexPen®"
+        
+        if french {
+            self.titleLabel.text = "Guide d’utilisation du FlexPen®"
+        } else {
+            self.titleLabel.text = "دليل استخدام الفلكسبين"
+        }
+        
+        
         self.navigationItem.titleView = self.titleLabel
         
         // Customize navigation bar
