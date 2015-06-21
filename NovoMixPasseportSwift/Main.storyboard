@@ -6,6 +6,103 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="FqE-6b-hb9">
+            <objects>
+                <viewController id="Ehs-GV-gyf" customClass="PDFViewController" customModule="NovoMixPasseportSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zOS-0Y-zD9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="OPn-YZ-gJ6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="5MK-sE-ON4">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="xOl-iI-ErF">
+                                            <connections>
+                                                <action selector="close:" destination="Ehs-GV-gyf" id="yU4-hb-EG3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" id="Dlp-v6-vN9">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="724"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="navBar" destination="OPn-YZ-gJ6" id="MJc-vm-lor"/>
+                        <outlet property="webView" destination="Dlp-v6-vN9" id="Nnt-JL-YJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4b-qi-h4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="-1300"/>
+        </scene>
+        <!--References Table View Controller-->
+        <scene sceneID="qpo-Kn-suO">
+            <objects>
+                <tableViewController id="a6E-2n-ZS1" customClass="ReferencesTableViewController" customModule="NovoMixPasseportSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="E2J-be-2kb">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="S1v-4D-OsF">
+                            <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Références" id="WGb-lr-IBM">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="stop" id="H3D-JB-xrf">
+                                        <connections>
+                                            <action selector="close:" destination="a6E-2n-ZS1" id="lgO-8f-SNf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="eVo-la-VlJ" rowHeight="70" style="IBUITableViewCellStyleDefault" id="Zvg-DJ-3CW">
+                                <rect key="frame" x="0.0" y="66" width="540" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zvg-DJ-3CW" id="tCf-Td-TY9">
+                                    <rect key="frame" x="0.0" y="0.0" width="507" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eVo-la-VlJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ehs-GV-gyf" kind="modal" id="cSy-YS-vVM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a6E-2n-ZS1" id="kOx-ut-aP3"/>
+                            <outlet property="delegate" destination="a6E-2n-ZS1" id="EDK-Oj-M1k"/>
+                        </connections>
+                    </tableView>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="navBar" destination="S1v-4D-OsF" id="2HG-Zr-t7S"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl1-y7-5pt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="-1300"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NovoMixPasseportSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,8 +140,11 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="a6E-2n-ZS1" kind="modal" modalPresentationStyle="formSheet" id="Ur9-Yd-tdD"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jtE-BY-IBv" customClass="RButton">
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jtE-BY-IBv" customClass="RButton">
                                         <rect key="frame" x="119" y="2" width="60" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -56,8 +156,11 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Ehs-GV-gyf" kind="modal" id="Jrp-no-j9O"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9MP-qE-DjX" customClass="RButton">
+                                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9MP-qE-DjX" customClass="RButton">
                                         <rect key="frame" x="187" y="2" width="70" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -69,6 +172,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Ehs-GV-gyf" kind="modal" id="9zw-7q-wng"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -104,23 +210,36 @@
                                 <color key="textColor" red="0.10980392160000001" green="0.52156862749999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="azt-Nr-Zsv">
-                                <rect key="frame" x="435" y="710" width="155" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Version arabe">
-                                    <color key="titleColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ig-g9-99l"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لداء السكري من نوع 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qc0-5m-P09">
                                 <rect key="frame" x="94" y="524" width="376" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="47"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.52156862749999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UAU-os-kmY" customClass="RButton">
+                                <rect key="frame" x="9" y="91" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="AR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmT-jl-rHU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zWX-z7-c2v">
+                                <rect key="frame" x="155" y="696" width="715" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">- Novo Nordisk ne va pas collecter ou archiver aucune donnée patient à travers cet outil.
+- Cet outil conseillera le patient diabétique sur le nombre d'unité d'insuline à s'injecter.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.1725741029" green="0.21834245320000001" blue="0.44677489999999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -146,11 +265,14 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="buttonsContainer" destination="sG2-sj-sYl" id="66c-kW-pwt"/>
+                        <outlet property="infoLabel" destination="zWX-z7-c2v" id="lTC-GM-zN1"/>
                         <outlet property="label1Arabic" destination="0jp-TW-YVX" id="YtZ-7c-UEI"/>
                         <outlet property="label1French" destination="8VQ-Ie-hwN" id="23z-FK-Bfu"/>
                         <outlet property="label2Arabic" destination="qc0-5m-P09" id="LlT-IU-hMp"/>
                         <outlet property="label2French" destination="8fD-vS-Xdy" id="ftj-Ps-dR7"/>
-                        <outlet property="languageButton" destination="azt-Nr-Zsv" id="odk-Py-UKC"/>
+                        <outlet property="languageButton" destination="UAU-os-kmY" id="T2m-2a-GJE"/>
+                        <outlet property="livretButton" destination="9MP-qE-DjX" id="qhl-0U-zWH"/>
+                        <outlet property="mlButton" destination="jtE-BY-IBv" id="8RY-iZ-q35"/>
                         <outlet property="showHideButton" destination="pg4-xe-FYJ" id="YaR-Vk-diK"/>
                         <outlet property="simulationButton" destination="FKu-4y-lhd" id="NhV-Gi-deY"/>
                         <outlet property="sommaireButton" destination="o8x-yK-76v" id="U5A-g7-Fvg"/>
@@ -158,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1148" y="-374"/>
+            <point key="canvasLocation" x="884" y="-374"/>
         </scene>
         <!--Flex Pen View Controller-->
         <scene sceneID="5p2-FV-4Le">
@@ -207,14 +329,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pour injecter l'insuline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IuP-S2-a6b">
-                                <rect key="frame" x="698" y="592" width="230" height="21"/>
+                                <rect key="frame" x="698" y="589" width="230" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.68235294120000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avant chaque injection" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I6C-3L-eQ5">
-                                <rect key="frame" x="112" y="592" width="213" height="21"/>
+                                <rect key="frame" x="112" y="589" width="213" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.68235294120000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -639,7 +761,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gjA-4H-K8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="-374"/>
+            <point key="canvasLocation" x="-219" y="-374"/>
         </scene>
         <!--Conseils View Controller-->
         <scene sceneID="LJG-Ik-GnW">
@@ -704,6 +826,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="cSy-YS-vVM"/>
         <segue reference="UCL-Ix-ZMe"/>
     </inferredMetricsTieBreakers>
 </document>
