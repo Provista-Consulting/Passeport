@@ -58,11 +58,28 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
     var newDoseDay = 0
     var newDoseNight = 0
     
+    // MARK: - Helpers
+    // MARK: -
+    
+    var pickerColorDay : CGColor?
+    var pickerColorNight : CGColor?
+    
     // MARK: - ViewController
     // MARK: -
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if self.oneInj {
+            self.doseView.sliderNight.minimumValue = 12.0
+            self.doseView.sliderDay.minimumValue = 12.0
+        }
+        
+        self.pickerColorDay = self.glycemiesView.pickerDay1.superview?.layer.borderColor
+        self.pickerColorNight = self.glycemiesView.pickerNight1.superview?.layer.borderColor
+        
+        self.glycemiesView.alertDay.hidden = true
+        self.glycemiesView.alertNight.hidden = true
 
         // Do any additional setup after loading the view.
         
@@ -140,6 +157,7 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         // When the objectif changes
         
+        
         if pickerView == self.objectifView.pickerMin {
             self.objectifMin = getPickerViewValue(self.objectifView.pickerMin.selectedRowInComponent(0), pos2: self.objectifView.pickerMin.selectedRowInComponent(1))
             
@@ -163,18 +181,22 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             self.day1 = getPickerViewValue(self.glycemiesView.pickerDay1.selectedRowInComponent(0), pos2: self.glycemiesView.pickerDay1.selectedRowInComponent(1))
             
             calculDay()
+            
+            changePickerNightBorderColor()
         }
         
         if pickerView == self.glycemiesView.pickerDay2 {
             self.day2 = getPickerViewValue(self.glycemiesView.pickerDay2.selectedRowInComponent(0), pos2: self.glycemiesView.pickerDay2.selectedRowInComponent(1))
             
             calculDay()
+            changePickerNightBorderColor()
         }
         
         if pickerView == self.glycemiesView.pickerDay3 {
             self.day3 = getPickerViewValue(self.glycemiesView.pickerDay3.selectedRowInComponent(0), pos2: self.glycemiesView.pickerDay3.selectedRowInComponent(1))
             
             calculDay()
+            changePickerNightBorderColor()
         }
         
         // When night's glycemie changes
@@ -182,18 +204,21 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             self.night1 = getPickerViewValue(self.glycemiesView.pickerNight1.selectedRowInComponent(0), pos2: self.glycemiesView.pickerNight1.selectedRowInComponent(1))
             
             calculNight()
+            changePickerNightBorderColor()
         }
         
         if pickerView == self.glycemiesView.pickerNight2 {
             self.night2 = getPickerViewValue(self.glycemiesView.pickerNight2.selectedRowInComponent(0), pos2: self.glycemiesView.pickerNight2.selectedRowInComponent(1))
             
             calculNight()
+            changePickerNightBorderColor()
         }
         
         if pickerView == self.glycemiesView.pickerNight3 {
             self.night3 = getPickerViewValue(self.glycemiesView.pickerNight3.selectedRowInComponent(0), pos2: self.glycemiesView.pickerNight3.selectedRowInComponent(1))
             
             calculNight()
+            changePickerNightBorderColor()
         }
 
     }
@@ -575,6 +600,10 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
             self.resultView.labelNightResult.text = ""
             self.resultView.labelNightResultSecond.text = ""
             
+//            self.glycemiesView.pickerNight1.superview?.layer.borderColor = self.pickerColorNight
+//            self.glycemiesView.pickerNight2.superview?.layer.borderColor = self.pickerColorNight
+//            self.glycemiesView.pickerNight2.superview?.layer.borderColor = self.pickerColorNight
+            
             // Hide animation
             //[self hideAnimation];
         }
@@ -605,7 +634,7 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                         
                         value = -2
                         self.resultView.labelDayResult.text = "Je diminuerai"
-                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit dejeuner de 2 unités (-2U)"
+                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit déjeuner de 2 unités (-2U)"
                     }
                     
                     if (self.minNight > 0.8) && (self.minNight <= 1.1) {
@@ -633,21 +662,21 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                         
                         value = 2
                         self.resultView.labelDayResult.text = "J'augmenterai"
-                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit dejeuner de 2 unités (+2U)"
+                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit déjeuner de 2 unités (+2U)"
                     }
                     
                     if (self.minNight >= 1.41) && (self.minNight <= 1.80) {
                         
                         value = 4
                         self.resultView.labelDayResult.text = "J'augmenterai"
-                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit dejeuner de 4 unités (+4U)"
+                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit déjeuner de 4 unités (+4U)"
                     }
                     
                     if self.minNight > 1.80 {
                         
                         value = 6
                         self.resultView.labelDayResult.text = "J'augmenterai"
-                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit dejeuner de 6 unités (+6U)"
+                        self.resultView.labelDayResultSecond.text = "la dose d'insuline avant le petit déjeuner de 6 unités (+6U)"
                     }
                     
                     
@@ -679,12 +708,17 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 
                 showResultView()
                 
+                
         } else {
             
             self.resultView.labelNightMin.text = "- g/l"
             self.resultView.labelDayDose.text = "- Unités"
             self.resultView.labelDayResult.text = ""
             self.resultView.labelDayResultSecond.text = ""
+            
+//            self.glycemiesView.pickerDay1.superview?.layer.borderColor = self.pickerColorDay
+//            self.glycemiesView.pickerDay2.superview?.layer.borderColor = self.pickerColorDay
+//            self.glycemiesView.pickerDay2.superview?.layer.borderColor = self.pickerColorDay
             
             // Hide animation
             //[self hideAnimation];
@@ -723,6 +757,65 @@ class CalculatorViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.titleLabel.textColor = UIColor.whiteColor()
+        
+    }
+    
+    func changePickerNightBorderColor() {
+        
+        if self.night1 > 0 && self.night2 > 0 && self.night3 > 0 {
+            
+            if self.night1 < 0.7 {
+                self.glycemiesView.pickerNight1.superview?.layer.borderColor = UIColor.redColor().CGColor
+            } else {
+                self.glycemiesView.pickerNight1.superview?.layer.borderColor = self.pickerColorNight
+            }
+            
+            if self.night2 < 0.7 {
+                self.glycemiesView.pickerNight2.superview?.layer.borderColor = UIColor.redColor().CGColor
+            } else {
+                self.glycemiesView.pickerNight2.superview?.layer.borderColor = self.pickerColorNight
+            }
+            
+            if self.night3 < 0.7 {
+                self.glycemiesView.pickerNight3.superview?.layer.borderColor = UIColor.redColor().CGColor
+                
+            } else {
+                self.glycemiesView.pickerNight3.superview?.layer.borderColor = self.pickerColorNight
+            }
+            
+            if self.night1 < 0.7 || self.night2 < 0.7 || self.night3 < 0.7 {
+                self.glycemiesView.alertNight.hidden = false
+            } else {
+                self.glycemiesView.alertNight.hidden = true
+            }
+        }
+        
+        if self.day1 > 0 && self.day2 > 0 && self.day3 > 0 {
+            
+            if self.day1 < 0.7 {
+                self.glycemiesView.pickerDay1.superview?.layer.borderColor = UIColor.redColor().CGColor
+            } else {
+                self.glycemiesView.pickerDay1.superview?.layer.borderColor = self.pickerColorDay
+            }
+            
+            if self.day2 < 0.7 {
+                self.glycemiesView.pickerDay2.superview?.layer.borderColor = UIColor.redColor().CGColor
+            } else {
+                self.glycemiesView.pickerDay2.superview?.layer.borderColor = self.pickerColorDay
+            }
+            
+            if self.day3 < 0.7 {
+                self.glycemiesView.pickerDay3.superview?.layer.borderColor = UIColor.redColor().CGColor
+            } else {
+                self.glycemiesView.pickerDay3.superview?.layer.borderColor = self.pickerColorDay
+            }
+            
+            if self.day1 < 0.7 || self.day2 < 0.7 || self.day3 < 0.7 {
+                self.glycemiesView.alertDay.hidden = false
+            } else {
+                self.glycemiesView.alertDay.hidden = true
+            }
+        }
         
     }
 }

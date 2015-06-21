@@ -94,8 +94,19 @@ import UIKit
     @IBOutlet weak var buttonHypoglycemie: TopButton!
     @IBOutlet weak var buttonConseils: TopButton!
     @IBOutlet weak var buttonNovoFine: TopButton!
-    // Our custom view from the XIB file
     
+    // Views to animate
+    @IBOutlet weak var titleView1: SpringView!
+    @IBOutlet weak var titleView2: SpringView!
+    @IBOutlet weak var titleView3: SpringView!
+    @IBOutlet weak var titleView4: SpringView!
+    @IBOutlet weak var titleView5: SpringView!
+    @IBOutlet weak var titleView6: SpringView!
+    
+    @IBOutlet weak var circle: SpringImageView!
+    @IBOutlet weak var lines: SpringImageView!
+    
+    // Our custom view from the XIB file
     var view: UIView!
     
     convenience init() {
@@ -136,10 +147,69 @@ import UIKit
         return view
     }
 
-    @IBAction func hideMe(sender: AnyObject) {
+    @IBAction func hideMe(sender: AnyObject?) {
         
-        self.animation = "fadeOut"
-        self.animate()
+//        self.animation = "fadeOut"
+//        self.animate()
+        
+        titleView1.alpha = 0.0
+        titleView1.animation = "zoomIn"
+        titleView2.alpha = 0.0
+        titleView2.animation = "zoomIn"
+        titleView3.alpha = 0.0
+        titleView3.animation = "zoomIn"
+        titleView4.alpha = 0.0
+        titleView4.animation = "zoomIn"
+        titleView5.alpha = 0.0
+        titleView5.animation = "zoomIn"
+        titleView6.alpha = 0.0
+        titleView6.animation = "zoomIn"
+        
+        circle.alpha = 0.0
+        lines.alpha = 0.0
+        circle.transform = CGAffineTransformMakeRotation(CGFloat(M_PI / 2))
+        
+    }
+    
+    @IBAction func animatedViews(sender: AnyObject?) {
+        
+        hideMe(nil)
+        
+        UIView.animateWithDuration(0.5, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            //Animation
+            
+            self.circle.transform = CGAffineTransformMakeRotation(0.0)
+            self.circle.alpha = 1.0
+            self.lines.alpha = 1.0
+            
+        }) { (Bool) -> Void in
+        
+            UIView.animateWithDuration(0.5, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+                //Animation
+                
+                self.titleView1.alpha = 1.0
+                self.titleView1.animate()
+                
+                self.titleView2.alpha = 1.0
+                self.titleView2.animate()
+                
+                self.titleView3.alpha = 1.0
+                self.titleView3.animate()
+                
+                self.titleView4.alpha = 1.0
+                self.titleView4.animate()
+                
+                self.titleView5.alpha = 1.0
+                self.titleView5.animate()
+                
+                self.titleView6.alpha = 1.0
+                self.titleView6.animate()
+                
+                }) { (Bool) -> Void in }
+        
+        }
+        
+        
         
     }
 

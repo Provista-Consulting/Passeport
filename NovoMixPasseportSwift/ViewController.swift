@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var french = true
-    @IBOutlet weak var languageButton: UIButton!
+    @IBOutlet weak var languageButton: RButton!
     
     @IBOutlet weak var label1French: UILabel!
     @IBOutlet weak var label2French: UILabel!
@@ -19,6 +19,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var label1Arabic: UILabel!
     @IBOutlet weak var label2Arabic: UILabel!
     
+    @IBOutlet weak var mlButton: RButton!
+    @IBOutlet weak var livretButton: RButton!
+    
+    
+    
+    @IBOutlet weak var infoLabel: UILabel!
     
     var sommaireView = SommaireView(frame: CGRect(x: 0, y: 0, width: 1024, height: 768))
     var titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 44))
@@ -33,7 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        //info.hidden = true
         createNavigationStyle ()
         self.createViews()
         
@@ -57,7 +63,7 @@ class ViewController: UIViewController {
         
         self.sommaireView.french = self.french
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -147,19 +153,20 @@ class ViewController: UIViewController {
     
     @IBAction func showSommaire(sender: AnyObject!) {
         
-        if (sender as! UIBarButtonItem).title == "Fermer" {
+        if (sender as! UIBarButtonItem).title == "Fermer" || (sender as! UIBarButtonItem).title == "إغلاق" {
             
-            (sender as! UIBarButtonItem).title = "Sommaire"
+            (sender as! UIBarButtonItem).title = self.french ? "Sommaire" : "الفهرس"
             
             self.sommaireView.animation = "fadeOut"
-            
             self.sommaireView.animate()
             
         } else {
+            self.sommaireView.animatedViews(nil)
             self.sommaireView.hidden = false
             self.sommaireView.animation = "fadeIn"
             self.sommaireView.animate()
-            (sender as! UIBarButtonItem).title = "Fermer"
+            (sender as! UIBarButtonItem).title = self.french ? "Fermer" : "إغلاق"
+            
         }
         
     }
@@ -210,7 +217,15 @@ class ViewController: UIViewController {
             self.label2French.hidden = true
             
             self.french = false
-            self.languageButton.setTitle("Version française", forState: UIControlState.Normal)
+            self.languageButton.setTitle("FR", forState: UIControlState.Normal)
+            
+            self.infoLabel.text = "            - نوفو نورديسك لن تقوم بجمع أو حفظ أي معلومة تخص المريض عن طريق هذا التطبيق.\n            - هذا التطبيق يساعد المريض بداء السكري في تحديد جرعة الأنسولين التي يجب حقنها."
+            
+            self.titleLabel.text = "دفتر التكفل الذاتي"
+            
+            self.navigationItem.rightBarButtonItem?.title = "الفهرس"
+            
+            self.navigationItem.leftBarButtonItem?.title = "تحديد الجرعة"
             
         } else {
             
@@ -223,11 +238,53 @@ class ViewController: UIViewController {
             self.label2French.hidden = false
             
             self.french = true
-            self.languageButton.setTitle("Version arabe", forState: UIControlState.Normal)
+            self.languageButton.setTitle("AR", forState: UIControlState.Normal)
+            
+            self.infoLabel.text = "- Novo Nordisk ne va pas collecter ou archiver aucune donnée patient à travers cet outil.\n- Cet outil conseillera le patient diabétique sur le nombre d'unité d'insuline à s'injecter."
+            self.titleLabel.text = "Mon passeport"
+            
+            self.navigationItem.rightBarButtonItem?.title = "Sommaire"
+            
+            self.navigationItem.leftBarButtonItem?.title = "Simulation"
         }
         
         self.sommaireView.french = self.french
         
     }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        
+        
+        
+        if sender!.tag == 100 {
+            let vc = segue.destinationViewController as! PDFViewController
+            vc.pdfTitle = "Mentions Légales"
+            vc.pdfFile = "rcp"
+            
+        }
+
+        if sender!.tag == 200 {
+            let vc = segue.destinationViewController as! PDFViewController
+            vc.pdfTitle = "Livret"
+            vc.pdfFile = "passeport"
+            
+        }
+        
+    }
+    
+    @IBAction func showAlert(sender: AnyObject) {
+        
+        let importantAlert = UIAlertView(title: "Important :\n", message: "Novo Nordisk ne va pas collecter ou archiver aucune donnée patient à travers cet outil.\n\nCet outil vous conseillera sur le nombre d'unité d'insuline à prendre. ", delegate: nil, cancelButtonTitle: "OK")
+                
+        importantAlert.show()
+    }
+    
+
+
 }
 

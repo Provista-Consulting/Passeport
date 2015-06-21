@@ -9,6 +9,8 @@
 import UIKit
 
 class AgiterSubview: UIView {
+    
+    var french = true
 
     @IBOutlet weak var playVideoContainer: UIView!
     var buttonPlayVideo : buttonMenu!
@@ -21,10 +23,12 @@ class AgiterSubview: UIView {
         self.buttonPlayVideo.active = true
         self.buttonPlayVideo.labelNumber.text = "▶︎"
         self.buttonPlayVideo.labelNumber.font = self.buttonPlayVideo.labelNumber.font.fontWithSize(18)
-        self.buttonPlayVideo.labelTitle.text = "Vidéo"
+        self.buttonPlayVideo.labelTitle.text = french ? "Vidéo" : "فيديو"
         self.buttonPlayVideo.button.tag = 0
         self.buttonPlayVideo.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.playVideoContainer.addSubview(self.buttonPlayVideo)
+        
+        
     }
     
     @IBAction func click (sender: AnyObject!) {

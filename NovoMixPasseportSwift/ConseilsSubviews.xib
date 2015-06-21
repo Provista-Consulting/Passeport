@@ -82,7 +82,7 @@
                     <rect key="frame" x="26" y="400" width="828" height="78"/>
                     <attributedString key="attributedText">
                         <fragment>
-                            <string key="content">• Penser à avoir sa carte de diabètique dans son portefeuille (pour qu’on puisse vous venir en aide ou appeler du secours en cas de malaise).</string>
+                            <string key="content">• Penser à avoir sa carte de diabétique dans son portefeuille (pour qu’on puisse vous venir en aide ou appeler du secours en cas de malaise).</string>
                             <attributes>
                                 <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>

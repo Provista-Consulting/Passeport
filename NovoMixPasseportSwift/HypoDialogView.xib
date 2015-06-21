@@ -18,7 +18,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="610" height="430"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLb-qQ-H4A">
-                            <rect key="frame" x="108" y="92" width="400" height="300"/>
+                            <rect key="frame" x="24" y="74" width="563" height="350"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

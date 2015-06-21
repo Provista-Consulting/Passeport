@@ -13,6 +13,7 @@ class InjecterSubview: UIView {
     @IBOutlet weak var playVideoContainer: UIView!
     
     var buttonPlayVideo : buttonMenu!
+    var french = true
     
     func load() {
         
@@ -22,7 +23,7 @@ class InjecterSubview: UIView {
         self.buttonPlayVideo.active = true
         self.buttonPlayVideo.labelNumber.text = "▶︎"
         self.buttonPlayVideo.labelNumber.font = self.buttonPlayVideo.labelNumber.font.fontWithSize(18)
-        self.buttonPlayVideo.labelTitle.text = "Vidéo"
+        self.buttonPlayVideo.labelTitle.text = french ? "Vidéo" : "فيديو"
         self.buttonPlayVideo.button.tag = 3
         self.buttonPlayVideo.button.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
         self.playVideoContainer.addSubview(self.buttonPlayVideo)

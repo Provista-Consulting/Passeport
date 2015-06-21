@@ -55,7 +55,7 @@
                     <attributedString key="attributedText">
                         <fragment>
                             <string key="content">1. La technologie «thin Wall», paroi mince pour plus de confort.
-2. 2 longueurs pour s’adapter à la corpulence de chacun.
+2. Deux longueurs pour s’adapter à la corpulence de chacun.
 </string>
                             <attributes>
                                 <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -133,12 +133,12 @@ TGVzIGluamVjdGlvbnMgZOKAmWluc3VsaW5lIHBldXZlbnQgw6p0cmUgcHJhdGlxdcOpZXMgw6AgZGlm
 ZsOpcmVudHMgZW5kcm9pdHMgAyh2b2lyIHNjaMOpbWEgY2ktY29udHJlKSA6IGFiZG9tZW4sIGJyYXMs
 IGN1aXNzZXMgZXQgZmVzc2VzLgMgRGFucyBjaGFjdW5lIGRlIGNlcyB6b25lcywgbOKAmWFic29ycHRp
 b24gZOKAmWluc3VsaW5lIGVzdCB1biBwZXUgZGlmZsOpcmVudGUsIGF2ZWMgdW4gZMOpYnV0IGTigJlh
-Y3Rpb24gcGx1cyBtb2lucyByYXBpZGUgZXQgdW5lIGR1csOpZSBk4oCZYWN0aW9uIHBsdXMgb3UgbW9p
-bnMgbG9uZ3VlLg
+Y3Rpb24gcGx1cyBvdSBtb2lucyByYXBpZGUgZXQgdW5lIGR1csOpZSBk4oCZYWN0aW9uIHBsdXMgb3Ug
+bW9pbnMgbG9uZ3VlLg
 </string>
                             <attributes>
                                 <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
                             </attributes>
                         </fragment>
@@ -587,7 +587,8 @@ AyA
                             </attributes>
                         </fragment>
                         <fragment>
-                            <string key="content">.2. </string>
+                            <string key="content">.
+2. </string>
                             <attributes>
                                 <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
@@ -724,7 +725,8 @@ AyA
                             </attributes>
                         </fragment>
                         <fragment>
-                            <string key="content">3. </string>
+                            <string key="content">
+3. </string>
                             <attributes>
                                 <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
@@ -801,14 +803,14 @@ AyA
                             <attributedString key="attributedText">
                                 <fragment content="نوفوتويست">
                                     <attributes>
-                                        <color key="NSColor" red="0.023529411764705882" green="0.14901960784313725" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <font key="NSFont" size="24" name="GeezaPro-Bold"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
                                     </attributes>
                                 </fragment>
                                 <fragment content=" ">
                                     <attributes>
-                                        <color key="NSColor" red="0.023529411764705882" green="0.14901960784313725" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
                                     </attributes>
@@ -817,14 +819,14 @@ AyA
                                     <string key="content">
 5 </string>
                                     <attributes>
-                                        <color key="NSColor" red="0.023529411764705882" green="0.14901960784313725" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
                                     </attributes>
                                 </fragment>
                                 <fragment content="ملم">
                                     <attributes>
-                                        <color key="NSColor" red="0.023529411764705882" green="0.14901960784313725" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="NSColor" red="0.023529411760000001" green="0.14901960780000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <font key="NSFont" size="19" name="GeezaPro-Bold"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
                                     </attributes>
@@ -977,7 +979,7 @@ AyA
                                 <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
                             </attributes>
                         </fragment>
-                        <fragment content="): ">
+                        <fragment content=") : ">
                             <attributes>
                                 <color key="NSColor" red="0.12549019610000001" green="0.49803921569999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="19" name="HelveticaNeue-Medium"/>

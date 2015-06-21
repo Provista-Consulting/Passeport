@@ -93,6 +93,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         // Agiter subview
         
         self.agiterSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[0 + arIndex] as! AgiterSubview
+        self.agiterSubview.french = self.french
         self.agiterSubview.load()
         self.agiterSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -101,6 +102,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         // Purger subview
         
         self.purgerSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[1 + arIndex] as! PurgerSubview
+        self.purgerSubview.french = self.french
         self.purgerSubview.load()
         self.purgerSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -111,6 +113,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         // Selectionner subview
         
         self.selectionnerSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[2 + arIndex] as! SelectionnerSubview
+        self.selectionnerSubview.french = self.french
         self.selectionnerSubview.load()
         self.selectionnerSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -121,6 +124,7 @@ class FlexPenViewController: UIViewController, UIScrollViewDelegate {
         // Injecter subview
         
         self.injecterSubview = NSBundle.mainBundle().loadNibNamed("FlexPenSubviews", owner: self, options: nil)[3 + arIndex] as! InjecterSubview
+        self.injecterSubview.french = self.french
         self.injecterSubview.load()
         self.injecterSubview.buttonPlayVideo.button.addTarget(self, action: "playVideo:", forControlEvents: UIControlEvents.TouchUpInside)
         

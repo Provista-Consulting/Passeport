@@ -16,11 +16,16 @@ import UIKit
     @IBOutlet weak var pickerDay2: MyPickerView!
     @IBOutlet weak var pickerDay3: MyPickerView!
     
+    
+    @IBOutlet weak var alertDay: UILabel!
+    
     // Outlets for night view
     @IBOutlet weak var nightView: UIView!
     @IBOutlet weak var pickerNight1: MyPickerView!
     @IBOutlet weak var pickerNight2: MyPickerView!
     @IBOutlet weak var pickerNight3: MyPickerView!
+    
+    @IBOutlet weak var alertNight: UILabel!
     
     // Custom view from the XIB file
     var view: SpringView!

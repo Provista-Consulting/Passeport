@@ -98,4 +98,12 @@ import UIKit
         return view
     }
 
+    @IBAction func showAlert(sender: AnyObject) {
+        
+        let importantAlert = UIAlertView(title: "Important :\n", message: "Novo Nordisk ne va pas collecter ou archiver aucune donnée patient à travers cet outil.\n\nCet outil vous conseillera sur le nombre d'unité d'insuline à prendre. ", delegate: nil, cancelButtonTitle: "OK")
+        
+        
+        
+        importantAlert.show()
+    }
 }

@@ -15,6 +15,7 @@
                 <outlet property="buttonNovoTwist" destination="bmX-wS-jd4" id="T3Z-P9-DpC"/>
                 <outlet property="buttonSommaire" destination="XkT-eB-T2e" id="yKf-Qh-ons"/>
                 <outlet property="buttonSommaireAr" destination="nch-67-1S5" id="h4y-fk-8sB"/>
+                <outlet property="circle" destination="wKB-4G-yUL" id="Zbx-GT-kla"/>
                 <outlet property="labelAdapteDose" destination="cYJ-Ey-nKr" id="CvZ-dZ-sHd"/>
                 <outlet property="labelAdapteDoseAr" destination="9Tg-jz-qh6" id="vSm-dg-NCL"/>
                 <outlet property="labelConseils" destination="Cx0-f1-v4O" id="vBi-sz-yHF"/>
@@ -27,6 +28,13 @@
                 <outlet property="labelNovoFineAr" destination="0pB-ZC-fqa" id="LMI-5H-aUM"/>
                 <outlet property="labelNovoTwist" destination="fUq-Xd-hwp" id="P9U-Ua-uvE"/>
                 <outlet property="labelNovoTwistAr" destination="BaQ-eH-kB0" id="CkQ-rG-ZyW"/>
+                <outlet property="lines" destination="tUG-Am-Tvp" id="MKc-8h-KI0"/>
+                <outlet property="titleView1" destination="nRb-c1-3P9" id="dGQ-3r-cPx"/>
+                <outlet property="titleView2" destination="ZPg-bW-qi9" id="8Sb-wK-weI"/>
+                <outlet property="titleView3" destination="mHU-Ay-GEi" id="HR2-Hy-a95"/>
+                <outlet property="titleView4" destination="3iC-XP-gvc" id="ReK-Sc-TBA"/>
+                <outlet property="titleView5" destination="uhD-Rh-KX2" id="94K-QW-e0S"/>
+                <outlet property="titleView6" destination="RYw-k3-1yM" id="9dN-0s-HA5"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -34,11 +42,11 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sommaire-lines" id="tUG-Am-Tvp">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sommaire-lines" id="tUG-Am-Tvp" customClass="SpringImageView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="87" y="174" width="860" height="430"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sommaire-circle" id="wKB-4G-yUL">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sommaire-circle" id="wKB-4G-yUL" customClass="SpringImageView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="323" y="214" width="340" height="340"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -47,7 +55,7 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" id="nRb-c1-3P9">
+                <view contentMode="scaleToFill" id="nRb-c1-3P9" customClass="SpringView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="686" y="390" width="245" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -76,14 +84,14 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" id="ZPg-bW-qi9">
-                    <rect key="frame" x="660" y="272" width="288" height="31"/>
+                <view contentMode="scaleToFill" id="ZPg-bW-qi9" customClass="SpringView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
+                    <rect key="frame" x="660" y="272" width="348" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment j’adapte ma dose" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cYJ-Ey-nKr">
-                            <rect key="frame" x="0.0" y="0.0" width="299" height="31"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment adapter la dose d'insuline " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cYJ-Ey-nKr">
+                            <rect key="frame" x="0.0" y="0.0" width="348" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" red="0.1725741029" green="0.21834245320000001" blue="0.44677489999999997" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -95,7 +103,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PIQ-bP-R7b" customClass="TopButton" customModule="NovoMixPasseportSwift" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="293" height="31"/>
+                            <rect key="frame" x="0.0" y="0.0" width="348" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -104,7 +112,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" id="mHU-Ay-GEi">
+                <view contentMode="scaleToFill" id="mHU-Ay-GEi" customClass="SpringView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="303" y="133" width="329" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -132,7 +140,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" id="3iC-XP-gvc">
+                <view contentMode="scaleToFill" id="3iC-XP-gvc" customClass="SpringView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="92" y="266" width="238" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -193,14 +201,14 @@ Cg
                             </state>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" id="raY-WN-8RU" customClass="Slogan" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="16" y="714" width="82" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" id="uhD-Rh-KX2">
+                <view contentMode="scaleToFill" id="uhD-Rh-KX2" customClass="SpringView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="577" y="530" width="316" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -238,6 +246,9 @@ Cg
                         <color key="titleColor" red="0.1725741029" green="0.21834245320000001" blue="0.44677489999999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="animatedViews:" destination="-1" eventType="touchUpInside" id="BIM-jD-AuL"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nch-67-1S5" customClass="TopButton" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="373" y="353" width="241" height="62"/>
@@ -248,19 +259,22 @@ Cg
                         <color key="titleColor" red="0.1725741029" green="0.21834245320000001" blue="0.44677489999999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="animatedViews:" destination="-1" eventType="touchUpInside" id="Irc-cV-BsB"/>
+                    </connections>
                 </button>
-                <view contentMode="scaleToFill" id="RYw-k3-1yM">
+                <view contentMode="scaleToFill" id="RYw-k3-1yM" customClass="SpringView" customModule="NovoMixPasseportSwift" customModuleProvider="target">
                     <rect key="frame" x="80" y="464" width="248" height="63"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guide d’utilisation du NovoPen®" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tQr-PT-7O2">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guide d’utilisation du NovoPen® 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tQr-PT-7O2">
                             <rect key="frame" x="-10" y="0.0" width="266" height="55"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                             <color key="textColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دليل استخدام نوفوبين" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0pB-ZC-fqa">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دليل استخدام نوفوبين 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0pB-ZC-fqa">
                             <rect key="frame" x="-9" y="4" width="266" height="55"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
@@ -268,7 +282,7 @@ Cg
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YXS-zu-d7D" customClass="TopButton" customModule="NovoMixPasseportSwift" customModuleProvider="target">
-                            <rect key="frame" x="-33" y="0.0" width="387" height="55"/>
+                            <rect key="frame" x="0.0" y="0.0" width="248" height="55"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

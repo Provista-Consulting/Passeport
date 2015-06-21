@@ -18,6 +18,8 @@ class HypoDialogView: SpringView {
     @IBOutlet weak var titleLabel: UILabel!
     
     var frontIsHidden = true
+    
+    var iOS7Hide = false
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -31,9 +33,29 @@ class HypoDialogView: SpringView {
         didSet {
             
             if !hidden {
-                NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "hideFrontView:", userInfo: nil, repeats: false)
+                //NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "hideFrontView:", userInfo: nil, repeats: false)
+                if let b = self.button {
+                    self.button.transform = CGAffineTransformMakeRotation( CGFloat((M_PI * -1) / 2))
+                }
+                
+                if let v = self.frontView {
+                    
+                    if (UIDevice.currentDevice().systemVersion as NSString).floatValue < 8.0 {
+                        if !iOS7Hide {
+                            self.frontView.frame.origin.y = self.frontView.frame.origin.y - 350.0
+                            iOS7Hide = true
+                        }
+                        
+                    } else {
+                        self.frontView.transform = CGAffineTransformMakeTranslation(0.0, -350.0)
+                    }
+                    
+                }
+                
+                frontIsHidden = true
+                
             } else {
-                NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "showFrontView:", userInfo: nil, repeats: false)
+                //NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "hideFrontView:", userInfo: nil, repeats: false)
             }
         }
     }
@@ -42,6 +64,9 @@ class HypoDialogView: SpringView {
         self.layer.shadowColor = UIColor.blackColor().CGColor
         self.layer.shadowOpacity = 0.5
         self.layer.shadowRadius = 10.0
+        
+        self.button.transform = CGAffineTransformMakeRotation( CGFloat((M_PI * -1) / 2))
+        self.frontView.transform = CGAffineTransformMakeTranslation(0.0, -350.0)
     }
 
     @IBAction func click(sender: AnyObject) {
@@ -72,7 +97,16 @@ class HypoDialogView: SpringView {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             
             self.button.transform = CGAffineTransformMakeRotation(0.0)
-            self.frontView.transform = CGAffineTransformMakeTranslation(0.0, 0.0)
+            
+            if (UIDevice.currentDevice().systemVersion as NSString).floatValue < 8.0 {
+                if self.iOS7Hide {
+                    self.frontView.frame.origin.y = self.frontView.frame.origin.y + 350.0
+                    self.iOS7Hide = false
+                }
+                
+            } else {
+                self.frontView.transform = CGAffineTransformMakeTranslation(0.0, 0.0)
+            }
             
             }) { (Bool) -> Void in
                 
@@ -86,7 +120,16 @@ class HypoDialogView: SpringView {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             
             self.button.transform = CGAffineTransformMakeRotation( CGFloat((M_PI * -1) / 2))
-            self.frontView.transform = CGAffineTransformMakeTranslation(0.0, -350.0)
+            
+            if (UIDevice.currentDevice().systemVersion as NSString).floatValue < 8.0 {
+                if !self.iOS7Hide {
+                    self.frontView.frame.origin.y = self.frontView.frame.origin.y - 350.0
+                    self.iOS7Hide = true
+                }
+                
+            } else {
+                self.frontView.transform = CGAffineTransformMakeTranslation(0.0, -350.0)
+            }
             
             }) { (Bool) -> Void in
                 

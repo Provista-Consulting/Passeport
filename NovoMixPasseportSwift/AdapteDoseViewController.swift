@@ -47,7 +47,7 @@ class AdapteDoseViewController: UIViewController {
         self.titleLabel.font = UIFont.boldSystemFontOfSize(22.0)
         
         if french {
-            self.titleLabel.text = "Comment j’adapte ma dose"
+            self.titleLabel.text = "Comment adapter la dose d'insuline"
         } else {
             self.titleLabel.text = "كيفية ضبط الجرعة"
         }

@@ -42,6 +42,16 @@ class HypoglycemieViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.arIndex = french ? 0 : 4
         
+        var frame = CGRectZero
+        
+        if (UIDevice.currentDevice().systemVersion as NSString).floatValue < 8.0 {
+            frame = CGRectMake(0.0, 0.0, 1024, 768)
+            self.view.frame = frame
+        }
+//        else {
+//            frame = CGRectMake(0.0, 0.0, 1024, 768)
+//        }
+        
         // Causes button
         self.causesButton = NSBundle.mainBundle().loadNibNamed("ArrowButton", owner: self, options: nil)[0] as! ArrowButton
         self.causesButton.labelTitle.text = titles[0 + arIndex]
@@ -77,7 +87,15 @@ class HypoglycemieViewController: UIViewController {
         self.bgDialogView.frame = self.view.bounds
         self.bgDialogView.backgroundColor = UIColor.clearColor()
         var bgView = UIControl()
-        bgView.frame = self.view.bounds
+        
+        if (UIDevice.currentDevice().systemVersion as NSString).floatValue < 8.0 {
+            bgView.frame = CGRectMake(0.0, 0.0, 1024, 768)
+            //self.view.bounds = frame
+        } else {
+            bgView.frame = self.view.bounds
+        }
+        
+        
         bgView.backgroundColor = UIColor.whiteColor()
         bgView.alpha = 0.9
         bgView.addTarget(self, action: "closeDialog:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -94,7 +112,7 @@ class HypoglycemieViewController: UIViewController {
         
         self.view.addSubview(self.bgDialogView)
         self.bgDialogView.hidden = true
-        self.dialogView.hidden = true
+        //self.dialogView.hidden = true
         
         self.closeDialogButton = UIBarButtonItem(title: "Fermer", style: UIBarButtonItemStyle.Done, target: self, action: "closeDialog:")
         
@@ -116,27 +134,64 @@ class HypoglycemieViewController: UIViewController {
         
         switch sender.tag {
         case 0 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[0 + arIndex2] as! UIView
-            self.dialogView.scrollView.addSubview(view1)
+            
+            if french {
+                let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[0 + arIndex2] as! HypoDialogViewSubviews
+                view1.load()
+                self.dialogView.scrollView.addSubview(view1)
+                self.dialogView.imageView.image = UIImage(named: "cas1")
+                
+            } else {
+                
+                let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[0 + arIndex2] as! HypoDialogViewSubviewsAr
+                view1.load()
+                self.dialogView.scrollView.addSubview(view1)
+            }
+            
+            self.dialogView.imageView.image = UIImage(named: "cas1")
+            
             break
         case 1 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[1 + arIndex2] as! UIView
+            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[1] as! HypoDialogViewSubviews2
+            view1.french = self.french
+            view1.load()
+            
             self.dialogView.scrollView.addSubview(view1)
+            
+            self.dialogView.imageView.image = UIImage(named: "cas2")
+            
             break
         case 2 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[2 + arIndex2] as! UIView
+            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[2] as! HypoDialogViewSubviews3
+            view1.french = self.french
+            view1.load()
+            
             self.dialogView.scrollView.addSubview(view1)
+            
+            self.dialogView.imageView.image = UIImage(named: "cas3")
             
             break
         case 3 :
-            let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[3 + arIndex2] as! UIView
+            if french {
+                let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[3 + arIndex2] as! HypoDialogViewSubviews4
+                view1.load()
+                self.dialogView.scrollView.addSubview(view1)
+                
+            } else {
+                
+                let view1 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[3 + arIndex2] as! HypoDialogViewSubviews4Ar
+                view1.load()
+                self.dialogView.scrollView.addSubview(view1)
+            }
+
             var view2 = NSBundle.mainBundle().loadNibNamed("HypoDialogViewSubviews", owner: self, options: nil)[4 + arIndex2] as! UIView
             view2.frame.origin.y = 340.0
             
-            self.dialogView.scrollView.addSubview(view1)
             self.dialogView.scrollView.addSubview(view2)
             
             self.dialogView.scrollView.contentSize = CGSize(width: 563.0, height: CGFloat(340.0 * 2))
+            
+            self.dialogView.imageView.image = UIImage(named: "cas4")
             break
         default :
             break
@@ -151,7 +206,7 @@ class HypoglycemieViewController: UIViewController {
     
     func closeDialog (sender : AnyObject) {
         self.bgDialogView.hidden = true
-        self.dialogView.hidden = true
+        //self.dialogView.hidden = true
         
         self.navigationItem.rightBarButtonItem = nil
     }
