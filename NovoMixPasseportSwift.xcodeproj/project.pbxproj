@@ -18,6 +18,14 @@
 		CA2B1B851AF900DB00020298 /* ContainerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B841AF900DB00020298 /* ContainerPresentation.swift */; };
 		CA2B1B871AF90D9D00020298 /* buttonMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2B1B861AF90D9D00020298 /* buttonMenu.swift */; };
 		CA2B1B891AF90F7100020298 /* buttonMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA2B1B881AF90F7100020298 /* buttonMenu.xib */; };
+		CA5E03C31B1B1FE9002EB987 /* HypoDialogViewSubviews2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E03C21B1B1FE9002EB987 /* HypoDialogViewSubviews2.swift */; };
+		CA5E03C51B1B2ACE002EB987 /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5E03C41B1B2ACE002EB987 /* CustomCollectionCell.xib */; };
+		CA5E03C71B1B2EED002EB987 /* symptomes1.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA5E03C61B1B2EED002EB987 /* symptomes1.plist */; };
+		CA5E03C91B1B575B002EB987 /* symptomes2.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA5E03C81B1B575B002EB987 /* symptomes2.plist */; };
+		CA5E03CB1B1B58F8002EB987 /* HypoDialogViewSubviews3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E03CA1B1B58F8002EB987 /* HypoDialogViewSubviews3.swift */; };
+		CA5E03CD1B1B669C002EB987 /* HypoDialogViewSubviews4Ar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E03CC1B1B669C002EB987 /* HypoDialogViewSubviews4Ar.swift */; };
+		CA5E03CF1B1C739B002EB987 /* guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CA5E03CE1B1C739B002EB987 /* guide.pdf */; };
+		CA5E03D31B1C783A002EB987 /* novopen42.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CA5E03D21B1C783A002EB987 /* novopen42.pdf */; };
 		CA6EA00C1B04B5B900BF1D61 /* NovoFineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EA00B1B04B5B900BF1D61 /* NovoFineViewController.swift */; };
 		CA6EA00E1B04B74E00BF1D61 /* novofine.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CA6EA00D1B04B74E00BF1D61 /* novofine.mp4 */; };
 		CA6EA0101B04BDD500BF1D61 /* ConseilsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EA00F1B04BDD500BF1D61 /* ConseilsViewController.swift */; };
@@ -57,6 +65,15 @@
 		CA9734231B04E847004C3BA8 /* ArrowButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9734221B04E847004C3BA8 /* ArrowButton.xib */; };
 		CA9734261B04F5CC004C3BA8 /* HypoDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9734251B04F5CB004C3BA8 /* HypoDialogView.swift */; };
 		CAA070271AD15164000C8E70 /* FlexPenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA070261AD15164000C8E70 /* FlexPenViewController.swift */; };
+		CAA5C8DC1B11E1E800FFDB86 /* ReferencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5C8DB1B11E1E800FFDB86 /* ReferencesTableViewController.swift */; };
+		CAA5C8DE1B11E31800FFDB86 /* references.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAA5C8DD1B11E31800FFDB86 /* references.plist */; };
+		CAA5C8E31B11E61B00FFDB86 /* rcp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CAA5C8E01B11E61B00FFDB86 /* rcp.pdf */; };
+		CAA5C8E41B11E61B00FFDB86 /* unnikrishnan2009.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CAA5C8E11B11E61B00FFDB86 /* unnikrishnan2009.pdf */; };
+		CAA5C8E61B11E91D00FFDB86 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA5C8E51B11E91D00FFDB86 /* PDFViewController.swift */; };
+		CAA5C8E81B11F68100FFDB86 /* passeport.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CAA5C8E71B11F68100FFDB86 /* passeport.pdf */; };
+		CAC427371B1755C100E82EBD /* HypoDialogViewSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC427361B1755C000E82EBD /* HypoDialogViewSubviews.swift */; };
+		CAC427391B175C6900E82EBD /* HypoDialogViewSubviews4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC427381B175C6900E82EBD /* HypoDialogViewSubviews4.swift */; };
+		CAC4273B1B175FBB00E82EBD /* HypoDialogViewSubviewsAr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4273A1B175FBB00E82EBD /* HypoDialogViewSubviewsAr.swift */; };
 		CAC4920C1B08ACBB00B28CCD /* HypoDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4920B1B08ACBB00B28CCD /* HypoDialogView.xib */; };
 		CAC4920E1B08CFB600B28CCD /* HypoDialogViewSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */; };
 		CAC492111B09F5ED00B28CCD /* ConseilsSubviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */; };
@@ -138,6 +155,14 @@
 		CA2B1B841AF900DB00020298 /* ContainerPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerPresentation.swift; sourceTree = "<group>"; };
 		CA2B1B861AF90D9D00020298 /* buttonMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buttonMenu.swift; sourceTree = "<group>"; };
 		CA2B1B881AF90F7100020298 /* buttonMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = buttonMenu.xib; sourceTree = "<group>"; };
+		CA5E03C21B1B1FE9002EB987 /* HypoDialogViewSubviews2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogViewSubviews2.swift; sourceTree = "<group>"; };
+		CA5E03C41B1B2ACE002EB987 /* CustomCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
+		CA5E03C61B1B2EED002EB987 /* symptomes1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symptomes1.plist; sourceTree = "<group>"; };
+		CA5E03C81B1B575B002EB987 /* symptomes2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = symptomes2.plist; sourceTree = "<group>"; };
+		CA5E03CA1B1B58F8002EB987 /* HypoDialogViewSubviews3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogViewSubviews3.swift; sourceTree = "<group>"; };
+		CA5E03CC1B1B669C002EB987 /* HypoDialogViewSubviews4Ar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogViewSubviews4Ar.swift; sourceTree = "<group>"; };
+		CA5E03CE1B1C739B002EB987 /* guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = guide.pdf; sourceTree = "<group>"; };
+		CA5E03D21B1C783A002EB987 /* novopen42.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = novopen42.pdf; sourceTree = "<group>"; };
 		CA6EA00B1B04B5B900BF1D61 /* NovoFineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoFineViewController.swift; sourceTree = "<group>"; };
 		CA6EA00D1B04B74E00BF1D61 /* novofine.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = novofine.mp4; sourceTree = "<group>"; };
 		CA6EA00F1B04BDD500BF1D61 /* ConseilsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConseilsViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +203,15 @@
 		CA9734221B04E847004C3BA8 /* ArrowButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowButton.xib; sourceTree = "<group>"; };
 		CA9734251B04F5CB004C3BA8 /* HypoDialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogView.swift; sourceTree = "<group>"; };
 		CAA070261AD15164000C8E70 /* FlexPenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexPenViewController.swift; sourceTree = "<group>"; };
+		CAA5C8DB1B11E1E800FFDB86 /* ReferencesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferencesTableViewController.swift; sourceTree = "<group>"; };
+		CAA5C8DD1B11E31800FFDB86 /* references.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = references.plist; sourceTree = "<group>"; };
+		CAA5C8E01B11E61B00FFDB86 /* rcp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rcp.pdf; sourceTree = "<group>"; };
+		CAA5C8E11B11E61B00FFDB86 /* unnikrishnan2009.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = unnikrishnan2009.pdf; sourceTree = "<group>"; };
+		CAA5C8E51B11E91D00FFDB86 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		CAA5C8E71B11F68100FFDB86 /* passeport.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = passeport.pdf; sourceTree = "<group>"; };
+		CAC427361B1755C000E82EBD /* HypoDialogViewSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogViewSubviews.swift; sourceTree = "<group>"; };
+		CAC427381B175C6900E82EBD /* HypoDialogViewSubviews4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogViewSubviews4.swift; sourceTree = "<group>"; };
+		CAC4273A1B175FBB00E82EBD /* HypoDialogViewSubviewsAr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypoDialogViewSubviewsAr.swift; sourceTree = "<group>"; };
 		CAC4920B1B08ACBB00B28CCD /* HypoDialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypoDialogView.xib; sourceTree = "<group>"; };
 		CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HypoDialogViewSubviews.xib; sourceTree = "<group>"; };
 		CAC492101B09F5ED00B28CCD /* ConseilsSubviews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConseilsSubviews.xib; sourceTree = "<group>"; };
@@ -296,6 +330,8 @@
 				CA2B1B811AF8DDCC00020298 /* NovoTwistViewController.swift */,
 				CA6EA00B1B04B5B900BF1D61 /* NovoFineViewController.swift */,
 				CA6EA00F1B04BDD500BF1D61 /* ConseilsViewController.swift */,
+				CAA5C8DB1B11E1E800FFDB86 /* ReferencesTableViewController.swift */,
+				CAA5C8E51B11E91D00FFDB86 /* PDFViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -355,6 +391,13 @@
 				CA9734251B04F5CB004C3BA8 /* HypoDialogView.swift */,
 				CAC4920B1B08ACBB00B28CCD /* HypoDialogView.xib */,
 				CAC4920D1B08CFB600B28CCD /* HypoDialogViewSubviews.xib */,
+				CAC427361B1755C000E82EBD /* HypoDialogViewSubviews.swift */,
+				CAC4273A1B175FBB00E82EBD /* HypoDialogViewSubviewsAr.swift */,
+				CA5E03C21B1B1FE9002EB987 /* HypoDialogViewSubviews2.swift */,
+				CA5E03CA1B1B58F8002EB987 /* HypoDialogViewSubviews3.swift */,
+				CAC427381B175C6900E82EBD /* HypoDialogViewSubviews4.swift */,
+				CA5E03CC1B1B669C002EB987 /* HypoDialogViewSubviews4Ar.swift */,
+				CA5E03C41B1B2ACE002EB987 /* CustomCollectionCell.xib */,
 			);
 			name = Hypoglycemie;
 			sourceTree = "<group>";
@@ -380,6 +423,11 @@
 		CACB3E401AFB857300FEC309 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				CA5E03CE1B1C739B002EB987 /* guide.pdf */,
+				CAA5C8E01B11E61B00FFDB86 /* rcp.pdf */,
+				CAA5C8E11B11E61B00FFDB86 /* unnikrishnan2009.pdf */,
+				CAA5C8E71B11F68100FFDB86 /* passeport.pdf */,
+				CA5E03D21B1C783A002EB987 /* novopen42.pdf */,
 				CA6EA00D1B04B74E00BF1D61 /* novofine.mp4 */,
 				CACB3E411AFB85AA00FEC309 /* agiter.mp4 */,
 				CACB3E421AFB85AA00FEC309 /* injecter.mp4 */,
@@ -497,6 +545,9 @@
 			isa = PBXGroup;
 			children = (
 				CAED02EC1ABED46F00022FE9 /* Info.plist */,
+				CAA5C8DD1B11E31800FFDB86 /* references.plist */,
+				CA5E03C61B1B2EED002EB987 /* symptomes1.plist */,
+				CA5E03C81B1B575B002EB987 /* symptomes2.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -670,25 +721,34 @@
 				CAED03521ABED57800022FE9 /* ResultView.xib in Resources */,
 				CACB3E471AFB85AA00FEC309 /* purger.mp4 in Resources */,
 				CAD59EE41ACBFF8B00B82A56 /* SommaireView.xib in Resources */,
+				CAA5C8E31B11E61B00FFDB86 /* rcp.pdf in Resources */,
 				CAED03421ABED56300022FE9 /* uc.jpg in Resources */,
 				CA9143711AFA5E9C001AAA20 /* FlexPenSubviews.xib in Resources */,
 				CAC4920C1B08ACBB00B28CCD /* HypoDialogView.xib in Resources */,
 				CAED034E1ABED57800022FE9 /* DoseView.xib in Resources */,
 				CAED034C1ABED57800022FE9 /* ObjectifView.xib in Resources */,
+				CA5E03CF1B1C739B002EB987 /* guide.pdf in Resources */,
 				CAED03401ABED54D00022FE9 /* Images.xcassets in Resources */,
+				CAA5C8DE1B11E31800FFDB86 /* references.plist in Resources */,
 				CAED02F81ABED46F00022FE9 /* LaunchScreen.xib in Resources */,
 				CACB3E461AFB85AA00FEC309 /* injecter.mp4 in Resources */,
 				CAC492111B09F5ED00B28CCD /* ConseilsSubviews.xib in Resources */,
+				CA5E03C91B1B575B002EB987 /* symptomes2.plist in Resources */,
 				CAD59EED1ACC071E00B82A56 /* Slogan.xib in Resources */,
+				CA5E03C51B1B2ACE002EB987 /* CustomCollectionCell.xib in Resources */,
+				CAA5C8E41B11E61B00FFDB86 /* unnikrishnan2009.pdf in Resources */,
 				CA9734231B04E847004C3BA8 /* ArrowButton.xib in Resources */,
 				CAED03541ABED5B600022FE9 /* Main.storyboard in Resources */,
 				CAED033D1ABED52300022FE9 /* Thumbnail.xib in Resources */,
+				CAA5C8E81B11F68100FFDB86 /* passeport.pdf in Resources */,
 				CAD59EE81ACC02B100B82A56 /* NovoNordiskLogo.xib in Resources */,
+				CA5E03D31B1C783A002EB987 /* novopen42.pdf in Resources */,
 				CA6EA00E1B04B74E00BF1D61 /* novofine.mp4 in Resources */,
 				CA8138681AF7B30F0066030B /* LoadingView.xib in Resources */,
 				CAE175631B021CD3008AA929 /* NovoTwistSubview.xib in Resources */,
 				CA2B1B891AF90F7100020298 /* buttonMenu.xib in Resources */,
 				CAED03501ABED57800022FE9 /* GlycemiesView.xib in Resources */,
+				CA5E03C71B1B2EED002EB987 /* symptomes1.plist in Resources */,
 				CACB3E481AFB85AA00FEC309 /* selectionner.mp4 in Resources */,
 				CA8138651AF7B30F0066030B /* Info.plist in Resources */,
 			);
@@ -708,8 +768,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA5C8E61B11E91D00FFDB86 /* PDFViewController.swift in Sources */,
+				CAC4273B1B175FBB00E82EBD /* HypoDialogViewSubviewsAr.swift in Sources */,
 				CA2B1B851AF900DB00020298 /* ContainerPresentation.swift in Sources */,
 				CA8138731AF7B30F0066030B /* TransitionManager.swift in Sources */,
+				CA5E03C31B1B1FE9002EB987 /* HypoDialogViewSubviews2.swift in Sources */,
+				CAC427391B175C6900E82EBD /* HypoDialogViewSubviews4.swift in Sources */,
 				CAED03221ABED4A700022FE9 /* HomeButton.m in Sources */,
 				CAED035A1ABED5D400022FE9 /* CalculatorViewController.swift in Sources */,
 				CA2AC4C31B024B69004C5692 /* TechniqueSubview.swift in Sources */,
@@ -717,14 +781,17 @@
 				CA8138621AF7B30F0066030B /* DesignableTextView.swift in Sources */,
 				CADEC2911AC84CF400C046E1 /* UIColor+Chameleon.m in Sources */,
 				CA2B1B821AF8DDCC00020298 /* NovoTwistViewController.swift in Sources */,
+				CAC427371B1755C100E82EBD /* HypoDialogViewSubviews.swift in Sources */,
 				CA81385F1AF7B30F0066030B /* DesignableLabel.swift in Sources */,
 				CAED03201ABED4A700022FE9 /* ShowHideButton.m in Sources */,
 				CA81385C1AF7B30F0066030B /* BlurView.swift in Sources */,
 				CAED034F1ABED57800022FE9 /* GlycemiesView.swift in Sources */,
 				CA81386E1AF7B30F0066030B /* SpringImageView.swift in Sources */,
 				CADEC2921AC84CF400C046E1 /* UIColor+CIELAB.m in Sources */,
+				CA5E03CD1B1B669C002EB987 /* HypoDialogViewSubviews4Ar.swift in Sources */,
 				CAED03591ABED5D400022FE9 /* SimulatorViewController.swift in Sources */,
 				CA8138691AF7B30F0066030B /* Misc.swift in Sources */,
+				CA5E03CB1B1B58F8002EB987 /* HypoDialogViewSubviews3.swift in Sources */,
 				CAD59EE61ACC029400B82A56 /* NovoNordiskLogo.swift in Sources */,
 				CA8138741AF7B30F0066030B /* TransitionZoom.swift in Sources */,
 				CAED03271ABED4A700022FE9 /* InfoButton.m in Sources */,
@@ -771,6 +838,7 @@
 				CA81385E1AF7B30F0066030B /* DesignableImageView.swift in Sources */,
 				CAD59EEB1ACC06CE00B82A56 /* Slogan.swift in Sources */,
 				CAED02EE1ABED46F00022FE9 /* AppDelegate.swift in Sources */,
+				CAA5C8DC1B11E1E800FFDB86 /* ReferencesTableViewController.swift in Sources */,
 				CA2AC4C11B024178004C5692 /* SiteDinjectionSubview.swift in Sources */,
 				CA81386B1AF7B30F0066030B /* Spring.swift in Sources */,
 				CA8138641AF7B30F0066030B /* ImageLoader.swift in Sources */,
