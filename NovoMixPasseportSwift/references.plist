@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>small</key>
+		<string>1. Guide pratique</string>
+		<key>title</key>
+		<string>Guide pratique : traitement des patients diabétiques de type 2</string>
+		<key>file</key>
+		<string>guide</string>
+	</dict>
+	<dict>
+		<key>small</key>
+		<string>2. Unnikrishnan 2009</string>
+		<key>title</key>
+		<string>Unnikrishnan 2009</string>
+		<key>file</key>
+		<string>unnikrishnan2009</string>
+	</dict>
+	<dict>
+		<key>small</key>
+		<string>3. RCP NovoMix® 30 FlexPen®</string>
+		<key>title</key>
+		<string>RCP NovoMix® 30 FlexPen®</string>
+		<key>file</key>
+		<string>rcp</string>
+	</dict>
+	<dict>
+		<key>small</key>
+		<string>4. Manuel d&apos;utilisation NovoPen® 4</string>
+		<key>title</key>
+		<string>Manuel d&apos;utilisation NovoPen® 4</string>
+		<key>file</key>
+		<string>novopen42</string>
+	</dict>
+</array>
+</plist>
