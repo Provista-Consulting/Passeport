@@ -7,6 +7,7 @@
 #import "RButton.h"
 #import "MyPickerView.h"
 #import "TOMSMorphingLabel.h"
+#import "InfoButton.h"
 
 #define SLIDES_NUMBER 10
 
