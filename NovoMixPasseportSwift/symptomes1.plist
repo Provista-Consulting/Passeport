@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>pve1</string>
+		<key>textFR</key>
+		<string>Excès de nervosité / Agressivité</string>
+		<key>textAR</key>
+		<string>تعصب زائد / سلوك عنيف</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve2</string>
+		<key>textFR</key>
+		<string>Etat semblable à l’ivresse / Comportement incohérent / Désorientation</string>
+		<key>textAR</key>
+		<string>حالة تشبه السكر / سلوك غريب / توهان</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve3</string>
+		<key>textFR</key>
+		<string>Ralentissement de la parole ou des actes</string>
+		<key>textAR</key>
+		<string>إضطراب  في التعبير أو بطئ الحركة</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve4</string>
+		<key>textFR</key>
+		<string>Accès de rire</string>
+		<key>textAR</key>
+		<string>ضحك غير مفسر</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve5</string>
+		<key>textFR</key>
+		<string>Sueurs / Pâleurs</string>
+		<key>textAR</key>
+		<string>عرق / شحوب الوجه</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve6</string>
+		<key>textFR</key>
+		<string>Pouls rapide</string>
+		<key>textAR</key>
+		<string>النبض السريع</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve7</string>
+		<key>textFR</key>
+		<string>Yeux fixes et vides</string>
+		<key>textAR</key>
+		<string>غياب حركة العيون</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve8</string>
+		<key>textFR</key>
+		<string>Tremblements</string>
+		<key>textAR</key>
+		<string>رجفة</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve9</string>
+		<key>textFR</key>
+		<string>Somnolence / Fatigue intense</string>
+		<key>textAR</key>
+		<string>نعاس / تعب شديد</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve10</string>
+		<key>textFR</key>
+		<string>Angoisse extrêmes</string>
+		<key>textAR</key>
+		<string>قلق و توتر زائد</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pve11</string>
+		<key>textFR</key>
+		<string>Accès de pleurs</string>
+		<key>textAR</key>
+		<string>بكاء غير مفسر</string>
+	</dict>
+</array>
+</plist>

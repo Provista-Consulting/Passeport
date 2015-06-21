@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>pv1</string>
+		<key>textFR</key>
+		<string>Sentiment de mal-être / Nausées / Vomissements</string>
+		<key>textAR</key>
+		<string>توعك / غثيان / تقيؤ</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv2</string>
+		<key>textFR</key>
+		<string>Somnolence / Sentiment de fonctionner au ralenti</string>
+		<key>textAR</key>
+		<string>نعاس / خمول</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv3</string>
+		<key>textFR</key>
+		<string>Tremblements / Comportement bizarre / Geste imprécis</string>
+		<key>textAR</key>
+		<string>رجفة / سلوك غريب / إيماءات غير دقيقة</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv4</string>
+		<key>textFR</key>
+		<string>Nervosité</string>
+		<key>textAR</key>
+		<string>توتر الأعصاب</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv5</string>
+		<key>textFR</key>
+		<string>Picotements au niveau de la bouche</string>
+		<key>textAR</key>
+		<string>شعور بوخز في الفم</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv6</string>
+		<key>textFR</key>
+		<string>Maux de tête</string>
+		<key>textAR</key>
+		<string>صداع</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv7</string>
+		<key>textFR</key>
+		<string>Sueurs</string>
+		<key>textAR</key>
+		<string>عرق</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv8</string>
+		<key>textFR</key>
+		<string>Sensation de faim</string>
+		<key>textAR</key>
+		<string>الشعور بالجوع</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv9</string>
+		<key>textFR</key>
+		<string>Trouble de la vue</string>
+		<key>textAR</key>
+		<string>إضطراب في الرؤية</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv10</string>
+		<key>textFR</key>
+		<string>Sensation de froid</string>
+		<key>textAR</key>
+		<string>الشعور بالبرد</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv11</string>
+		<key>textFR</key>
+		<string>Sentiment d’une perte de connaissance imminente</string>
+		<key>textAR</key>
+		<string>شعور بفقدان الوعي</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv12</string>
+		<key>textFR</key>
+		<string>Fatigue soudaine</string>
+		<key>textAR</key>
+		<string>شعور بتعب و إرهاق غير مفسر</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv13</string>
+		<key>textFR</key>
+		<string>Palpitation</string>
+		<key>textAR</key>
+		<string>خفقان</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv14</string>
+		<key>textFR</key>
+		<string>Angoisse</string>
+		<key>textAR</key>
+		<string>قلق</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>pv15</string>
+		<key>textFR</key>
+		<string>Gêne pour parler ou articuler les mots</string>
+		<key>textAR</key>
+		<string>إضطراب في التعبير</string>
+	</dict>
+</array>
+</plist>
