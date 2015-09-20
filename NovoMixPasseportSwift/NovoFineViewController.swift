@@ -23,6 +23,13 @@ class NovoFineViewController: UIViewController {
         
         createNavigationStyle()
         
+        var frame = CGRectZero
+        
+        if (UIDevice.currentDevice().systemVersion as NSString).floatValue < 8.0 {
+            frame = CGRectMake(0.0, 0.0, 1024, 768)
+            self.view.frame = frame
+        }
+        
         let path = NSBundle.mainBundle().pathForResource("novofine", ofType:"mp4")!
         let url = NSURL.fileURLWithPath(path)
         
